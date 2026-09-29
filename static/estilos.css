@@ -6,7 +6,7 @@
 @font-face{font-family:"Montserrat";src:url(/fonts/montserrat-800.woff2) format("woff2");font-weight:800;font-display:swap}
 
 :root{
-  --suelo:#F8F7EE;        /* pavimento del pasillo */
+  --suelo:#F4F6F5;        /* pavimento del pasillo */
   --pared:#FFFFFF;
   --navy:#0A2463;         /* rótulos */
   --navy-hover:#123285;
@@ -17,12 +17,12 @@
   --rojo:#EB5757;         /* SOLO urgencias */
   --rojo-tinta:#B3261E;
   --rojo-velo:#FDEDEC;
-  --verde-wa:#1E8C4E;     /* WhatsApp */
+  --verde-wa:#187A43;     /* WhatsApp */
   --tinta:#15204A;
   --tinta-2:#46507A;
   --linea:#DADDE6;
   --r:12px;               /* radio único de placas y botones */
-  --sombra:0 2px 4px rgba(10,36,99,.08),0 12px 28px -12px rgba(10,36,99,.28);
+  --sombra:0 2px 4px rgba(16,20,32,.08),0 12px 28px -12px rgba(16,20,32,.3);
   --ease-out:cubic-bezier(.23,1,.32,1);
   --rotulo:"Montserrat","Inter",system-ui,sans-serif;
   --senal:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif; /* rótulos de señalética */
@@ -33,7 +33,7 @@ html{-webkit-text-size-adjust:100%;scroll-padding-top:24px}
 body{margin:0;background:var(--suelo);color:var(--tinta);font:400 1.125rem/1.65 var(--texto);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%;height:auto}
 a{color:var(--navy);text-decoration-color:var(--celeste);text-decoration-thickness:2px;text-underline-offset:.2em}
-@media (hover:hover){a:hover{color:var(--navy-hover)}}
+@media (hover:hover){a:not([class]):hover{color:var(--navy-hover)}}
 ::selection{background:var(--celeste);color:var(--navy)}
 :focus-visible{outline:3px solid var(--celeste);outline-offset:3px;border-radius:6px}
 h1,h2,h3{font-family:var(--rotulo);font-weight:800;color:var(--navy);line-height:1.08;letter-spacing:-.015em;margin:0 0 .55em;text-wrap:balance}
@@ -62,7 +62,7 @@ ul,ol{padding-left:1.2em}
 .btn-borde{background:var(--pared);color:var(--navy);border-color:var(--navy)}
 @media (hover:hover){
   .btn-navy:hover{background:var(--navy-hover);color:#fff}
-  .btn-wa:hover{background:#18763f;color:#fff}
+  .btn-wa:hover{background:#136636;color:#fff}
   .btn-celeste:hover{background:#7ad8f6;color:var(--navy)}
 }
 .enlace-flecha{display:inline-flex;align-items:center;gap:.4em;font:700 1.2rem var(--senal);color:var(--navy);text-decoration:none}
@@ -76,7 +76,7 @@ ul,ol{padding-left:1.2em}
 .cartel-wrap::before{left:7.5%}
 .cartel-wrap::after{right:7.5%}
 .cartel{display:flex;align-items:center;gap:24px;min-height:94px;padding:0 20px 0 34px;background:var(--navy);border-radius:var(--r);
-  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 14px 24px -14px rgba(6,26,74,.6)}
+  box-shadow:0 14px 24px -14px rgba(16,20,32,.45)}
 .marca{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font:700 clamp(1.2rem,1.9vw,1.8rem)/1.1 var(--senal);margin-right:auto;white-space:nowrap}
 .marca:hover{color:#fff}
 .logo-marca{width:52px;height:52px;flex:none}
@@ -397,7 +397,7 @@ address{font-style:normal}
   .plano-base{margin-top:8px;display:flex;justify-content:center}
   .plano-rutas{display:none}
   .pie-grid{grid-template-columns:1fr 1fr}
-  .barra-movil{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(6,26,74,.25)}
+  .barra-movil{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(16,20,32,.22)}
   .barra-movil a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:.6rem 0 calc(.6rem + env(safe-area-inset-bottom));color:#fff;text-decoration:none;font:700 .95rem var(--senal)}
   .barra-movil .ico{width:24px;height:24px}
   .bm-wa{background:var(--verde-wa)}

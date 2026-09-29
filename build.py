@@ -674,7 +674,7 @@ def escribir(ruta, contenido):
 def main():
     if SALIDA.exists():
         shutil.rmtree(SALIDA)
-    shutil.copytree(RAIZ / "static", SALIDA)
+    shutil.copytree(RAIZ / "static", SALIDA, ignore=shutil.ignore_patterns("*.json"))
     indexables = ["/"]
     escribir("/", pag_inicio())
     escribir("/tratamientos/", pag_tratamientos()); indexables.append("/tratamientos/")

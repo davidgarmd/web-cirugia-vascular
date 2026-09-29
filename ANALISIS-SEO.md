@@ -27,6 +27,7 @@ Método: auditoría de SEO local, schema, SEO técnico y visibilidad en buscador
 |---|---|---|---|---|
 | Inicio `/` | cirujano vascular Ciudad Real | angiólogo Ciudad Real, cirugía vascular Ciudad Real, especialista en circulación Ciudad Real | Local / transaccional | Medio |
 | `/tratamiento-varices-ciudad-real/` | tratamiento varices Ciudad Real | quitar varices Ciudad Real, láser varices, escleroterapia, esclerosis de varices | Transaccional | **Alto** (la más rentable) |
+| `/congestion-venosa-pelvica/` | congestión venosa pélvica | síndrome de congestión pélvica, varices pélvicas, varices vulvares, dolor pélvico crónico, embolización de varices pélvicas | Informativa → cita | Medio (nacional, poca competencia de especialistas en la zona) |
 | `/eco-doppler-ciudad-real/` | eco doppler Ciudad Real | doppler de piernas, ecografía de venas, eco doppler carótidas | Transaccional | Medio |
 | `/enfermedad-arterial-periferica/` | mala circulación piernas | dolor en las piernas al caminar, claudicación intermitente | Informativa → cita | Alto (nacional) |
 | `/pie-diabetico-ciudad-real/` | pie diabético Ciudad Real | herida pie diabético que no cura, dedo negro diabetes | Mixta, urgente | Medio |
@@ -46,7 +47,7 @@ Criterio: las páginas con **"Ciudad Real" en URL, título y H1** atacan búsque
 - Título (≤ 65 caracteres aprox.) y meta descripción únicos en cada página, con servicio + ciudad.
 - Un único H1 por página con la intención local; jerarquía H2 limpia.
 - URLs limpias y descriptivas, con barra final coherente y `canonical` absoluto.
-- Enlazado interno en estrella: portada → hub `/tratamientos/` → 8 páginas de patología, que se enlazan entre sí con anclas descriptivas y con el eco-doppler como página pivote. Todas a ≤ 2 clics de la portada.
+- Enlazado interno en estrella: portada (tótem «¿Qué notas?» y mapa vascular) → plano `/tratamientos/` → 9 páginas de patología, que se enlazan entre sí con anclas descriptivas y con el eco-doppler como página pivote. Todas a ≤ 2 clics de la portada.
 - Migas de pan visibles y en schema.
 - NAP (nombre, dirección y teléfono) visible en el pie de todas las páginas, en contacto y en la portada, idéntico al del schema.
 - Botón de llamada (`tel:`), WhatsApp y barra fija de contacto en móvil.
