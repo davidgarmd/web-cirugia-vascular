@@ -97,6 +97,11 @@ ul,ol{padding-left:1.2em}
 .hero .btn{font-size:clamp(1.3rem,2.3vw,2.2rem);min-height:clamp(54px,4.1vw,64px);padding:0 .9em;gap:.4em}
 .hero .btn .ico{width:1.3em;height:1.3em}
 .hero-mujer{display:block}
+@media (prefers-reduced-motion:no-preference){
+  .hero-mujer{animation:entrar-andando 2.8s cubic-bezier(.3,.55,.35,1) both,paso .35s ease-in-out 8 alternate}
+}
+@keyframes entrar-andando{from{translate:-38vw 0}to{translate:0 0}}
+@keyframes paso{from{transform:translateY(0) rotate(0)}to{transform:translateY(-6px) rotate(-1.5deg)}}
 
 /* Tótem ¿Qué notas? */
 .totem{position:relative;background:var(--navy);border-radius:var(--r) var(--r) 4px 4px;color:#fff;
@@ -148,11 +153,15 @@ ul,ol{padding-left:1.2em}
   .suelo{position:absolute;left:0;bottom:2.4%;width:57%}
 }
 @media (max-width:1099.98px){
-  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;padding:36px 16px 0;width:min(720px,100%);margin-inline:auto}
-  .hero-mujer{width:min(150px,34vw);justify-self:end;margin:-12px 12px -24px 0;grid-row:2}
-  .totem{grid-row:3}
+  /* Tableta y ventana estrecha: texto y paciente a la izquierda, tótem a la derecha */
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,380px);grid-template-rows:auto 1fr auto;column-gap:clamp(20px,4vw,40px);row-gap:0;
+    padding:28px 24px 0;width:min(1040px,100%);margin-inline:auto}
+  .hero h1{font-size:clamp(2.3rem,5.2vw,3.4rem)}
+  .hero-copy{grid-column:1;grid-row:1}
+  .hero-mujer{grid-column:1;grid-row:2;align-self:end;justify-self:start;width:clamp(104px,15vw,150px);height:auto;margin:20px 0 -8px 14%;position:relative;z-index:2}
+  .hero .totem{grid-column:2;grid-row:1/3;margin-right:36px}
   .rutas{display:none}
-  .suelo{position:relative;grid-row:4;width:100vw;margin-left:-16px;height:22px;margin-top:-6px}
+  .suelo{position:relative;grid-column:1/-1;grid-row:3;width:auto;margin:0 -24px;height:22px}
 }
 
 /* ---------- Mapa vascular ---------- */
@@ -421,7 +430,10 @@ address{font-style:normal}
   .acciones .btn{flex:1 1 0;min-width:0;padding-inline:.6em}
   .hero .btn{font-size:1.25rem}
   .hero-mujer{display:none}
-  .totem,.suelo{grid-row:auto}
+  .hero-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:none;padding-inline:16px}
+  .hero-copy,.hero .totem,.suelo{grid-column:auto;grid-row:auto}
+  .hero .totem{margin-right:22px}
+  .suelo{margin:0 -16px}
   .hero-grid{gap:16px;padding-top:14px}
   .acciones-hero{margin-top:14px}
   .totem h2{font-size:1.6rem}
@@ -453,3 +465,7 @@ address{font-style:normal}
   .btn,.fila,.placa,.sala,.nav{transition:none}
 }
 @media print{.cartel-wrap,.barra-movil,.final,.lateral,.pie,.rutas,.suelo{display:none}}
+@media (min-width:721px) and (max-width:1099.98px){
+  .barra-movil{display:none}
+  .hero-sub{margin-top:14px}
+}
