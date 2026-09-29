@@ -1,54 +1,564 @@
 {
   "tool": "build-phase",
   "version": 2,
-  "startedAt": "2026-09-29T10:28:50.907Z",
-  "comp": ".impeccable/mocks/comp-a-totem.png",
-  "direction": "a0578fdf",
+  "startedAt": "2026-09-29T18:32:58.718Z",
+  "comp": ".impeccable/mocks/comp-d2-hibrida.png",
+  "direction": null,
   "breakpoint": "2688x1520",
   "artifact": "public/index.html",
-  "phase": "spec",
+  "phase": "hero",
   "phases": {
     "comps": {
+      "status": "skipped",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [
+        {
+          "at": "2026-09-29T18:32:58.718Z",
+          "text": "started with an approved comp; the comp round happened before this state (surface round or manual)"
+        }
+      ],
+      "gate": null,
+      "forced": null
+    },
+    "spec": {
       "status": "closed",
-      "openedAt": "2026-09-29T10:28:50.907Z",
-      "closedAt": "2026-09-29T10:32:24.690Z",
-      "attempts": 2,
+      "openedAt": "2026-09-29T18:32:58.718Z",
+      "closedAt": "2026-09-29T18:34:27.131Z",
+      "attempts": 1,
       "notes": [],
       "gate": {
         "ok": true,
         "reasons": [],
-        "summary": "3 comps, 1 approved",
-        "approved": ".impeccable/mocks/comp-a-totem.png",
-        "at": "2026-09-29T10:32:24.690Z"
+        "summary": "20 regions, 1 plates, 5 text regions measured",
+        "at": "2026-09-29T18:34:27.131Z"
       },
       "forced": null
     },
-    "spec": {
-      "status": "open",
-      "openedAt": "2026-09-29T10:32:24.756Z",
-      "closedAt": null,
-      "attempts": 0,
-      "notes": [],
-      "gate": null,
-      "forced": null
-    },
     "plates": {
-      "status": "pending",
-      "openedAt": null,
-      "closedAt": null,
-      "attempts": 0,
+      "status": "closed",
+      "openedAt": "2026-09-29T18:34:27.131Z",
+      "closedAt": "2026-09-29T18:38:14.022Z",
+      "attempts": 1,
       "notes": [],
-      "gate": null,
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "1/1 plates",
+        "at": "2026-09-29T18:38:14.022Z"
+      },
       "forced": null
     },
     "hero": {
-      "status": "pending",
-      "openedAt": null,
+      "status": "open",
+      "openedAt": "2026-09-29T18:38:14.022Z",
       "closedAt": null,
-      "attempts": 0,
+      "attempts": 10,
       "notes": [],
-      "gate": null,
-      "forced": null
+      "gate": {
+        "ok": false,
+        "reasons": [
+          "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+          "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region row-varices (control) is contradicted (structure 57%, detail added 30%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region row-pelvica (control) is contradicted (structure 47%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region row-caminar (control) is contradicted (structure 47%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+          "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+        ],
+        "regionReasons": {
+          "brand-name": [
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box"
+          ],
+          "btn-llamar": [
+            "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "btn-whatsapp": [
+            "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "row-varices": [
+            "region row-varices (control) is contradicted (structure 57%, detail added 30%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "row-pelvica": [
+            "region row-pelvica (control) is contradicted (structure 47%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "row-caminar": [
+            "region row-caminar (control) is contradicted (structure 47%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "row-pie": [
+            "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "row-prueba": [
+            "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "nav-cta": [
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "row-urgencias": [
+            "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ]
+        },
+        "summary": "hero 81% (match)",
+        "score": 0.8062,
+        "verdict": "match",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "row-pelvica contradicted 39%",
+          "row-prueba contradicted 40%",
+          "row-varices contradicted 41%"
+        ],
+        "worstIds": [
+          "row-pelvica",
+          "row-prueba",
+          "row-varices"
+        ],
+        "worstCrops": [
+          {
+            "id": "row-pelvica",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.3918,
+              "structure": 0.4665,
+              "color": 0.412,
+              "colorIntersection": 0.1204,
+              "paletteMatch": 0.569,
+              "detail": 0.1882,
+              "detailRaw": 0.3445,
+              "detailAdded": 0.3125,
+              "bands": 0.6485
+            },
+            "file": ".impeccable/review/diff/hero/regions/row-pelvica.png"
+          },
+          {
+            "id": "row-prueba",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.4019,
+              "structure": 0.4116,
+              "color": 0.4544,
+              "colorIntersection": 0.1393,
+              "paletteMatch": 0.6241,
+              "detail": 0.288,
+              "detailRaw": 0.3713,
+              "detailAdded": 0.1667,
+              "bands": 0.9143
+            },
+            "file": ".impeccable/review/diff/hero/regions/row-prueba.png"
+          },
+          {
+            "id": "row-varices",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.4117,
+              "structure": 0.5723,
+              "color": 0.3959,
+              "colorIntersection": 0.0885,
+              "paletteMatch": 0.5615,
+              "detail": 0.0778,
+              "detailRaw": 0.2289,
+              "detailAdded": 0.3021,
+              "bands": 0.2571
+            },
+            "file": ".impeccable/review/diff/hero/regions/row-varices.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, above the 72% bar; fix in the polish pass before responsive) 2 readings:",
+          "  text row-pelvica: cap height 34px in the build, 73.7px in the comp (-54%); set font-size so the cap height renders at 73.7px",
+          "  control row-caminar: its rule sits 1px into the box in the comp and 11px in the build (+10px), so the strip is taller than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) text nav-links: letter-spacing is wider than the comp's (gap 0.119 vs 0.061 of the cap height); set letter-spacing to close it by about 2px",
+          "(advisory, unchanged for 3+ attempts) text subtext: letter-spacing is wider than the comp's (gap 0.149 vs 0.085 of the cap height); set letter-spacing to close it by about 2px",
+          "(advisory, unchanged for 3+ attempts) text btn-whatsapp: cap height 52.5px in the build, 38.4px in the comp (+37%); set font-size so the cap height renders at 38.4px",
+          "(advisory, unchanged for 3+ attempts) text row-varices: cap height 33.5px in the build, 48.6px in the comp (-31%); set font-size so the cap height renders at 48.6px",
+          "(advisory, unchanged for 3+ attempts) text row-prueba: cap height 29px in the build, 40px in the comp (-28%); set font-size so the cap height renders at 40px",
+          "(advisory, unchanged for 3+ attempts) text nav-cta: ink is #0a2868 in the build, #f7f8f8 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) text row-caminar: ink is #f3f5f8 in the build, #8d99b2 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) control btn-llamar: its rule sits 1px into the box in the comp and 104px in the build (+103px), so the strip is taller than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) control btn-whatsapp: its rule sits 2px into the box in the comp and 104px in the build (+102px), so the strip is taller than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) chrome floor-line: its rule sits 16px into the box in the comp and 29px in the build (+13px), so the strip is taller than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) control row-varices: its rule sits 149px into the box in the comp and 6px in the build (-143px), so the strip is shorter than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) control row-pie: its rule sits 1px into the box in the comp and 155px in the build (+154px), so the strip is taller than the comp's; match the height, not only the position",
+          "(advisory, unchanged for 3+ attempts) control row-prueba: its rule sits 1px into the box in the comp and 159px in the build (+158px), so the strip is taller than the comp's; match the height, not only the position"
+        ],
+        "regionVerdicts": {
+          "nav-sign": "drift",
+          "logo-mark": "contradicted",
+          "brand-name": "contradicted",
+          "nav-links": "drift",
+          "nav-cta": "drift",
+          "headline": "drift",
+          "subtext": "drift",
+          "btn-llamar": "contradicted",
+          "btn-whatsapp": "contradicted",
+          "woman": "drift",
+          "floor-line": "drift",
+          "totem-panel": "contradicted",
+          "totem-title": "drift",
+          "row-varices": "contradicted",
+          "row-pelvica": "contradicted",
+          "row-caminar": "contradicted",
+          "row-pie": "contradicted",
+          "row-prueba": "contradicted",
+          "row-urgencias": "drift",
+          "routes": "drift"
+        },
+        "at": "2026-09-29T18:50:53.015Z"
+      },
+      "forced": null,
+      "readingsSeen": {
+        "text brand-name: letter-spacing is wider than the comp's (gap 0.164 vs 0.086 of the cap height); set letter-spacing to close it by about 3px": 1,
+        "text nav-links: letter-spacing is wider than the comp's (gap 0.112 vs 0.061 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text nav-cta: letter-spacing is wider than the comp's (gap 0.122 vs 0.075 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text subtext: letter-spacing is wider than the comp's (gap 0.189 vs 0.085 of the cap height); set letter-spacing to close it by about 4px": 1,
+        "text row-varices: cap height 28.5px in the build, 48.6px in the comp (-41%); set font-size so the cap height renders at 48.6px": 1,
+        "text row-pelvica: cap height 27.2px in the build, 73.7px in the comp (-63%); set font-size so the cap height renders at 73.7px": 1,
+        "text row-pie: letter-spacing is wider than the comp's (gap 0.145 vs 0.086 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text row-prueba: cap height 21.5px in the build, 40px in the comp (-46%); set font-size so the cap height renders at 40px": 1,
+        "text row-urgencias: cap height 27.6px in the build, 36.7px in the comp (-25%); set font-size so the cap height renders at 36.7px": 2,
+        "text row-pie: 1 line in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 1,
+        "text row-prueba: 3 lines in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 2,
+        "text subtext: the face renders 30% lighter than the comp's (ink density 0.59 vs 0.83); raise a weight step or use the ranked face": 1,
+        "text nav-cta: ink is #4b8e8e in the build, #f7f8f8 in the comp; use the comp's colour": 1,
+        "text row-caminar: ink is #f2f5f7 in the build, #8d99b2 in the comp; use the comp's colour": 1,
+        "control btn-llamar: its rule sits 1px into the box in the comp and 15px in the build (+14px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control btn-whatsapp: its rule sits 2px into the box in the comp and 15px in the build (+13px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "chrome floor-line: its rule sits 16px into the box in the comp and 8px in the build (-8px), so the strip is shorter than the comp's; match the height, not only the position": 1,
+        "control row-caminar: its rule sits 1px into the box in the comp and 13px in the build (+12px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-pie: its rule sits 1px into the box in the comp and 26px in the build (+25px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-prueba: its rule sits 1px into the box in the comp and 26px in the build (+25px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-urgencias: its rule sits 1px into the box in the comp and 23px in the build (+22px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text nav-links: letter-spacing is wider than the comp's (gap 0.119 vs 0.061 of the cap height); set letter-spacing to close it by about 2px": 9,
+        "text subtext: letter-spacing is wider than the comp's (gap 0.141 vs 0.085 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text row-varices: cap height 33.5px in the build, 48.6px in the comp (-31%); set font-size so the cap height renders at 48.6px": 6,
+        "text row-pelvica: cap height 28.3px in the build, 73.7px in the comp (-62%); set font-size so the cap height renders at 73.7px": 1,
+        "text row-prueba: letter-spacing is wider than the comp's (gap 0.098 vs 0.052 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text subtext: 1 line in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 1,
+        "text row-prueba: the face renders 32% lighter than the comp's (ink density 0.66 vs 0.98); raise a weight step or use the ranked face": 1,
+        "text nav-cta: ink is #58c3cb in the build, #f7f8f8 in the comp; use the comp's colour": 1,
+        "text row-caminar: ink is #f6f6ee in the build, #8d99b2 in the comp; use the comp's colour": 1,
+        "text subtext: its first line starts 22px lower than in the comp (30px vs 8px into the region box); the spacing above it is too large": 1,
+        "control btn-llamar: its rule sits 1px into the box in the comp and 54px in the build (+53px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control btn-whatsapp: its rule sits 2px into the box in the comp and 54px in the build (+52px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-varices: its rule sits 149px into the box in the comp and 137px in the build (-12px), so the strip is shorter than the comp's; match the height, not only the position": 1,
+        "control row-pie: its rule sits 1px into the box in the comp and 159px in the build (+158px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-urgencias: its rule sits 1px into the box in the comp and 40px in the build (+39px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text subtext: letter-spacing is wider than the comp's (gap 0.142 vs 0.085 of the cap height); set letter-spacing to close it by about 2px": 2,
+        "text btn-whatsapp: letter-spacing is wider than the comp's (gap 0.102 vs 0.052 of the cap height); set letter-spacing to close it by about 2px": 2,
+        "text row-varices: cap height 30.5px in the build, 48.6px in the comp (-37%); set font-size so the cap height renders at 48.6px": 2,
+        "text row-pelvica: cap height 27.8px in the build, 73.7px in the comp (-62%); set font-size so the cap height renders at 73.7px": 2,
+        "text row-pie: letter-spacing is wider than the comp's (gap 0.131 vs 0.086 of the cap height); set letter-spacing to close it by about 1px": 2,
+        "text row-prueba: cap height 31px in the build, 40px in the comp (-22%); set font-size so the cap height renders at 40px": 2,
+        "text row-pie: 3 lines in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 2,
+        "text nav-cta: ink is #0a2868 in the build, #f7f8f8 in the comp; use the comp's colour": 8,
+        "text row-varices: ink is #385888 in the build, #f5f6f7 in the comp; use the comp's colour": 2,
+        "text row-caminar: ink is #f0f5f8 in the build, #8d99b2 in the comp; use the comp's colour": 2,
+        "text subtext: its first line starts 18px lower than in the comp (26px vs 8px into the region box); the spacing above it is too large": 2,
+        "control btn-llamar: its rule sits 1px into the box in the comp and 35px in the build (+34px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "control btn-whatsapp: its rule sits 2px into the box in the comp and 35px in the build (+33px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "chrome floor-line: its rule sits 16px into the box in the comp and 29px in the build (+13px), so the strip is taller than the comp's; match the height, not only the position": 8,
+        "control row-varices: its rule sits 149px into the box in the comp and 2px in the build (-147px), so the strip is shorter than the comp's; match the height, not only the position": 4,
+        "control row-caminar: its rule sits 1px into the box in the comp and 18px in the build (+17px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "control row-urgencias: its rule sits 1px into the box in the comp and 59px in the build (+58px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "text subtext: letter-spacing is wider than the comp's (gap 0.149 vs 0.085 of the cap height); set letter-spacing to close it by about 2px": 6,
+        "text btn-whatsapp: cap height 52.5px in the build, 38.4px in the comp (+37%); set font-size so the cap height renders at 38.4px": 6,
+        "text row-pelvica: cap height 33.5px in the build, 73.7px in the comp (-55%); set font-size so the cap height renders at 73.7px": 2,
+        "text row-prueba: cap height 29px in the build, 40px in the comp (-28%); set font-size so the cap height renders at 40px": 5,
+        "text row-varices: ink is #385586 in the build, #f5f6f7 in the comp; use the comp's colour": 2,
+        "text row-caminar: ink is #f3f5f8 in the build, #8d99b2 in the comp; use the comp's colour": 5,
+        "control btn-llamar: its rule sits 1px into the box in the comp and 104px in the build (+103px), so the strip is taller than the comp's; match the height, not only the position": 6,
+        "control btn-whatsapp: its rule sits 2px into the box in the comp and 104px in the build (+102px), so the strip is taller than the comp's; match the height, not only the position": 6,
+        "control row-pie: its rule sits 1px into the box in the comp and 155px in the build (+154px), so the strip is taller than the comp's; match the height, not only the position": 5,
+        "control row-prueba: its rule sits 1px into the box in the comp and 159px in the build (+158px), so the strip is taller than the comp's; match the height, not only the position": 5,
+        "text row-varices: letter-spacing is wider than the comp's (gap 0.104 vs 0.062 of the cap height); set letter-spacing to close it by about 2px": 1,
+        "text row-pelvica: cap height 37px in the build, 73.7px in the comp (-50%); set font-size so the cap height renders at 73.7px": 1,
+        "text row-urgencias: cap height 25.5px in the build, 36.7px in the comp (-31%); set font-size so the cap height renders at 36.7px": 1,
+        "text row-prueba: 1 line in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 1,
+        "text row-varices: the face renders 41% heavier than the comp's (ink density 0.68 vs 0.48); drop a weight step or use the ranked face": 1,
+        "text row-prueba: the face renders 34% lighter than the comp's (ink density 0.64 vs 0.98); raise a weight step or use the ranked face": 1,
+        "text row-caminar: ink is #f3f5f7 in the build, #8d99b2 in the comp; use the comp's colour": 1,
+        "control row-varices: its rule sits 149px into the box in the comp and 6px in the build (-143px), so the strip is shorter than the comp's; match the height, not only the position": 4,
+        "control row-caminar: its rule sits 1px into the box in the comp and 83px in the build (+82px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-pie: its rule sits 1px into the box in the comp and 60px in the build (+59px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-prueba: its rule sits 1px into the box in the comp and 79px in the build (+78px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "control row-urgencias: its rule sits 1px into the box in the comp and 132px in the build (+131px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text row-pelvica: cap height 34px in the build, 73.7px in the comp (-54%); set font-size so the cap height renders at 73.7px": 3,
+        "control row-caminar: its rule sits 1px into the box in the comp and 11px in the build (+10px), so the strip is taller than the comp's; match the height, not only the position": 3
+      },
+      "history": [
+        {
+          "at": "2026-09-29T18:48:32.246Z",
+          "score": 0.7824,
+          "worstIds": [
+            "btn-llamar",
+            "row-urgencias",
+            "btn-whatsapp"
+          ],
+          "blockingReasons": [
+            "region btn-llamar is missing (detail 0%, structure 25%): the comp shows material the build does not",
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-whatsapp (control) is contradicted (structure 29%, detail added 33%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-varices (control) is contradicted (structure 68%, detail added 25%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 53%, detail added 32%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 58%, detail added 15%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 61%, detail added 10%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 34%, detail added 13%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-urgencias (control) is contradicted (structure 27%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "plate woman is clipped at the top: the comp's artwork keeps a margin there (ink box 355x548 at 0,12 in the region) and the build's runs to the edge (355x560 at 0,0); size the box to the artwork's aspect and use object-fit: contain, or place the <img> at the artwork's own size, never cover on a narrower box"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "missing",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "drift",
+            "row-varices": "contradicted",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "contradicted",
+            "routes": "drift"
+          },
+          "artifactHash": "460e7a78d485"
+        },
+        {
+          "at": "2026-09-29T18:48:40.173Z",
+          "score": 0.7824,
+          "worstIds": [
+            "btn-llamar",
+            "row-urgencias",
+            "btn-whatsapp"
+          ],
+          "blockingReasons": [
+            "region btn-llamar is missing (detail 0%, structure 25%): the comp shows material the build does not",
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-whatsapp (control) is contradicted (structure 29%, detail added 33%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-varices (control) is contradicted (structure 68%, detail added 25%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 53%, detail added 32%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 58%, detail added 15%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 61%, detail added 10%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 34%, detail added 13%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-urgencias (control) is contradicted (structure 27%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "plate woman is clipped at the top: the comp's artwork keeps a margin there (ink box 355x548 at 0,12 in the region) and the build's runs to the edge (355x560 at 0,0); size the box to the artwork's aspect and use object-fit: contain, or place the <img> at the artwork's own size, never cover on a narrower box"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "missing",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "drift",
+            "row-varices": "contradicted",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "contradicted",
+            "routes": "drift"
+          },
+          "artifactHash": "460e7a78d485"
+        },
+        {
+          "at": "2026-09-29T18:49:08.002Z",
+          "score": 0.8092,
+          "worstIds": [
+            "row-pelvica",
+            "row-prueba",
+            "row-pie"
+          ],
+          "blockingReasons": [
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region totem-title (text) is contradicted (structure 46%, detail added 16%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region row-varices (control) is contradicted (structure 65%, detail added 25%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 39%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 56%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "contradicted",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "contradicted",
+            "row-varices": "contradicted",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "drift",
+            "routes": "drift"
+          },
+          "artifactHash": "a7bd2c0c939b"
+        },
+        {
+          "at": "2026-09-29T18:49:16.358Z",
+          "score": 0.8092,
+          "worstIds": [
+            "row-pelvica",
+            "row-prueba",
+            "row-pie"
+          ],
+          "blockingReasons": [
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region totem-title (text) is contradicted (structure 46%, detail added 16%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region row-varices (control) is contradicted (structure 65%, detail added 25%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 39%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 56%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "contradicted",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "contradicted",
+            "row-varices": "contradicted",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "drift",
+            "routes": "drift"
+          },
+          "artifactHash": "a7bd2c0c939b"
+        },
+        {
+          "at": "2026-09-29T18:49:36.390Z",
+          "score": 0.7482,
+          "worstIds": [
+            "row-prueba",
+            "row-pie",
+            "row-urgencias"
+          ],
+          "blockingReasons": [
+            "region row-varices is missing (detail 1%, structure 56%): the comp shows material the build does not",
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 43%, detail added 20%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 32%, detail added 35%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 29%, detail added 27%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 22%, detail added 11%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-urgencias (control) is contradicted (structure 20%, detail added 36%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "contradicted",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "drift",
+            "row-varices": "missing",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "contradicted",
+            "routes": "drift"
+          },
+          "artifactHash": "a7bd2c0c939b"
+        },
+        {
+          "at": "2026-09-29T18:49:57.187Z",
+          "score": 0.8062,
+          "worstIds": [
+            "row-pelvica",
+            "row-prueba",
+            "row-varices"
+          ],
+          "blockingReasons": [
+            "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-varices (control) is contradicted (structure 57%, detail added 30%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pelvica (control) is contradicted (structure 47%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-caminar (control) is contradicted (structure 47%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "nav-sign": "drift",
+            "logo-mark": "contradicted",
+            "brand-name": "contradicted",
+            "nav-links": "drift",
+            "nav-cta": "drift",
+            "headline": "drift",
+            "subtext": "drift",
+            "btn-llamar": "contradicted",
+            "btn-whatsapp": "contradicted",
+            "woman": "drift",
+            "floor-line": "drift",
+            "totem-panel": "contradicted",
+            "totem-title": "drift",
+            "row-varices": "contradicted",
+            "row-pelvica": "contradicted",
+            "row-caminar": "contradicted",
+            "row-pie": "contradicted",
+            "row-prueba": "contradicted",
+            "row-urgencias": "drift",
+            "routes": "drift"
+          },
+          "artifactHash": "a7bd2c0c939b"
+        }
+      ]
     },
     "sections": {
       "status": "pending",
@@ -87,5 +597,40 @@
       "forced": null
     }
   },
-  "finish": null
+  "finish": null,
+  "plates": {
+    "woman": {
+      "id": "woman",
+      "file": "assets/plates/woman.png",
+      "status": "ok",
+      "assetHash": "85d24d33fa6d498d58feaf35a26223449f8abb3559ee2132e6d640f8cb4ba8b3",
+      "regionHash": "8a2e4fc4b57d84a4101e4ec10341d3baab40bcceefef1156fc4247dab7e991e6",
+      "referenceHash": "544c674224b8231d514bff86744af4f5eb0df9047ee554b687862ae0a313488a",
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 25560,
+        "totalPixels": 198800,
+        "remainingPixels": 173240,
+        "excludedFraction": 0.12857142857142856,
+        "fullyExcluded": false,
+        "regions": [
+          {
+            "id": "floor-line",
+            "kind": "chrome",
+            "cropPx": {
+              "x": 0,
+              "y": 488,
+              "w": 355,
+              "h": 72
+            },
+            "pixels": 25560
+          }
+        ],
+        "ignoredContainers": []
+      },
+      "compHash": "58039b5096f0951b32bde2f7be29627b92849d57adf7767ef0a1f31b3c1e10e1",
+      "size": "2048x3072",
+      "score": 0.7529
+    }
+  }
 }

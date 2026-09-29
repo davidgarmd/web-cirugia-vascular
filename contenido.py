@@ -116,6 +116,52 @@ SERVICIOS = [
         "relacionados": ["eco-doppler-ciudad-real", "ulceras-vasculares-ciudad-real", "trombosis-venosa-profunda"],
     },
     {
+        "slug": "congestion-venosa-pelvica",
+        "menu": "Congestión pélvica",
+        "icono": "pelvis",
+        "title": "Congestión venosa pélvica en Ciudad Real | Varices pélvicas y vulvares",
+        "description": "Dolor pélvico crónico, varices vulvares o varices que vuelven tras tratarlas: congestión venosa pélvica. Diagnóstico con eco-doppler y embolización. Ciudad Real.",
+        "h1": "Congestión venosa pélvica",
+        "resumen": "Dolor pélvico que empeora de pie, varices vulvares o varices de las piernas que vuelven.",
+        "condicion": "Síndrome de congestión venosa pélvica",
+        "escena": "Es un dolor sordo en la parte baja de la tripa que va a más a lo largo del día, sobre todo si pasas horas de pie, y que mejora al tumbarte. A veces molesta en las relaciones o después de ellas. Has pasado por varias consultas, las pruebas salen normales y nadie termina de darte una explicación.",
+        "respuesta": "La congestión venosa pélvica es la dilatación de las venas de la pelvis, casi siempre de la vena ovárica, porque sus válvulas no cierran y la sangre se embalsa. Produce dolor pélvico crónico que empeora de pie, varices en la vulva, el periné o la cara posterior del muslo, y varices de las piernas que reaparecen tras tratarlas. Se estudia con eco-doppler y pruebas de imagen, y se trata cerrando las venas enfermas desde dentro (embolización), sin cirugía abierta.",
+        "secciones": [
+            ("Qué está pasando por dentro",
+             "<p>Las venas de la pelvis recogen la sangre del útero, los ovarios y la zona genital y la devuelven hacia el corazón. Igual que en las piernas, tienen válvulas que impiden que la sangre retroceda. Cuando esas válvulas fallan, sobre todo tras varios embarazos, la sangre se estanca y las venas se dilatan, como una tubería que se va dando de sí por el peso del agua que no avanza.</p>"
+             "<p>Esa sangre embalsada busca salida hacia abajo. Por eso muchas mujeres con congestión pélvica tienen también varices en la vulva, en el periné o en la parte de atrás del muslo, y varices de las piernas que vuelven a aparecer aunque se hayan tratado bien.</p>"),
+            ("Cómo se diagnostica",
+             "<p>Empieza por una buena historia clínica, porque el patrón del dolor orienta mucho. Después, el <a href=\"/eco-doppler-ciudad-real/\">eco-doppler</a> estudia el reflujo en las venas pélvicas y en las de las piernas, y ayuda a entender de dónde vienen las varices que reaparecen. Para planificar el tratamiento se completa con angio-TAC o resonancia, y la confirmación final se hace con una flebografía, que es ver las venas por dentro con contraste en el mismo momento del tratamiento.</p>"
+             "<p>Es importante descartar antes otras causas de dolor pélvico junto a tu ginecólogo: la congestión venosa es una causa más, no la única.</p>"),
+            ("Tratamiento",
+             "<ul>"
+             "<li><strong>Embolización de las venas pélvicas</strong>: a través de una punción en una vena del cuello, el brazo o la ingle, se llega a la vena enferma y se cierra desde dentro con espirales metálicas muy finas o con espuma esclerosante. Se hace con anestesia local y, en general, sin ingreso o con un ingreso corto.</li>"
+             "<li><strong>Tratamiento de las varices vulvares y de las piernas</strong> que dependen de ese reflujo, una vez cerrado el origen, con escleroterapia o las técnicas habituales de <a href=\"/tratamiento-varices-ciudad-real/\">varices</a>.</li>"
+             "<li><strong>Medidas generales</strong> mientras tanto: evitar estar mucho tiempo de pie seguido, descansar tumbada con las piernas algo elevadas y usar ropa de compresión si ayuda.</li>"
+             "</ul>"
+             "<p>En casos concretos hay otras situaciones que comprimen las venas de la pelvis, como la compresión de la vena renal izquierda o de la vena ilíaca, que tienen su propio tratamiento endovascular. Se valoran en el mismo estudio.</p>"),
+        ],
+        "mitos": [
+            ("Es normal que la regla o el embarazo dejen dolores para siempre.", "Un dolor pélvico que dura más de seis meses y empeora de pie merece estudio. Tiene causas concretas y algunas, como esta, tienen tratamiento."),
+            ("Si las varices de las piernas vuelven, es que se trataron mal.", "A veces el origen está más arriba, en la pelvis. Si no se busca, las varices vuelven por mucho que se traten las de la pierna."),
+        ],
+        "pide_cita": [
+            "Dolor en la parte baja del abdomen de más de seis meses que empeora al final del día o de pie.",
+            "Varices en la vulva, el periné o la parte de atrás del muslo.",
+            "Varices en las piernas que han vuelto a salir tras tratarlas.",
+            "Molestias durante o después de las relaciones sexuales, sin otra causa encontrada.",
+        ],
+        "urgencia": None,
+        "faqs": [
+            ("¿Solo afecta a mujeres?", "Es mucho más frecuente en mujeres que han tenido embarazos. En hombres, el reflujo de las venas pélvicas se manifiesta más a menudo como varicocele."),
+            ("¿La embolización afecta a la fertilidad o a la regla?", "Se cierran venas que ya no funcionan; los órganos siguen recibiendo sangre por otras vías. Aun así, si planeas un embarazo, coméntalo antes para decidir el mejor momento."),
+            ("¿Duele la embolización?", "Se hace con anestesia local y sedación si hace falta. Es frecuente notar molestias pélvicas unos días después, que se controlan con analgésicos habituales."),
+            ("¿Cuándo se nota la mejoría?", "Muchas pacientes notan alivio en las semanas siguientes, aunque la mejoría completa puede tardar unos meses."),
+        ],
+        "llevar": "Si llevas tiempo con dolor pélvico que empeora de pie o tus varices vuelven una y otra vez, pide que miren también las venas de la pelvis.",
+        "relacionados": ["tratamiento-varices-ciudad-real", "eco-doppler-ciudad-real", "trombosis-venosa-profunda"],
+    },
+    {
         "slug": "pie-diabetico-ciudad-real",
         "menu": "Pie diabético",
         "icono": "pie",
@@ -470,4 +516,27 @@ BLOG = [
             "<p>Las enfermedades vasculares avisan en voz baja. Si te has reconocido en alguna de estas señales, una consulta con <a href=\"/eco-doppler-ciudad-real/\">eco-doppler</a> suele bastar para saber qué pasa y qué hacer.</p>"
         ),
     },
+]
+
+# ---------------------------------------------------------------------------
+# 4. TÓTEM "¿Qué notas?" (portada) y MAPA VASCULAR
+# ---------------------------------------------------------------------------
+# Cada fila: (lo que nota el paciente, a dónde lleva, slug, pictograma, urgente)
+TOTEM = [
+    ("Me pesan las piernas", "Varices", "tratamiento-varices-ciudad-real", "vena", False),
+    ("Dolor pélvico o varices vulvares", "Congestión pélvica", "congestion-venosa-pelvica", "pelvis", False),
+    ("Me duele al caminar", "Mala circulación", "enfermedad-arterial-periferica", "caminar", False),
+    ("Una herida en el pie que no cura", "Pie diabético", "pie-diabetico-ciudad-real", "pie", False),
+    ("Me han encontrado algo en una prueba", "Aorta dilatada, placas en la carótida", "aneurisma-aorta-abdominal", "informe", False),
+    ("Pierna hinchada de golpe", "Urgencias", "trombosis-venosa-profunda", "alarma", True),
+]
+
+# Anotaciones del mapa vascular: (texto, slug, tipo de vaso, posición vertical en % del dibujo)
+MAPA = [
+    ("Carótidas: estenosis", "estenosis-carotida", "arteria", 6),
+    ("Aorta: aneurisma", "aneurisma-aorta-abdominal", "arteria", 27),
+    ("Venas pélvicas: congestión", "congestion-venosa-pelvica", "vena", 40),
+    ("Arteria femoral: mala circulación", "enfermedad-arterial-periferica", "arteria", 55),
+    ("Safena: varices", "tratamiento-varices-ciudad-real", "vena", 70),
+    ("Pie diabético", "pie-diabetico-ciudad-real", "arteria", 92),
 ]

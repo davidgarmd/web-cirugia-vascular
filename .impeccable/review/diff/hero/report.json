@@ -1,0 +1,904 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-09-29T18:50:51.815Z",
+  "label": "hero",
+  "comp": ".impeccable/mocks/comp-d2-hibrida.png",
+  "build": ".impeccable/review/hero-repro.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "2688x1520",
+  "buildSize": "2688x1519",
+  "align": "top",
+  "overall": 0.8062,
+  "verdict": "match",
+  "scores": {
+    "overall": 0.8062,
+    "structure": 0.7616,
+    "color": 0.731,
+    "colorIntersection": 0.5832,
+    "paletteMatch": 0.8105,
+    "detail": 0.8467,
+    "detailRaw": 0.8571,
+    "detailAdded": 0.0208,
+    "bands": 0.9684
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#f8f7ea",
+        "coverage": 0.5891
+      },
+      {
+        "hex": "#082755",
+        "coverage": 0.3002
+      },
+      {
+        "hex": "#57c3f3",
+        "coverage": 0.0721
+      },
+      {
+        "hex": "#dd5348",
+        "coverage": 0.0236
+      },
+      {
+        "hex": "#289858",
+        "coverage": 0.0075
+      },
+      {
+        "hex": "#234565",
+        "coverage": 0.0075
+      }
+    ],
+    "build": [
+      {
+        "hex": "#f7f7e9",
+        "coverage": 0.5953
+      },
+      {
+        "hex": "#082767",
+        "coverage": 0.2977
+      },
+      {
+        "hex": "#5cc9f8",
+        "coverage": 0.0548
+      },
+      {
+        "hex": "#e85858",
+        "coverage": 0.0279
+      },
+      {
+        "hex": "#bdc1c7",
+        "coverage": 0.0132
+      },
+      {
+        "hex": "#188848",
+        "coverage": 0.0111
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "nav-sign",
+      "x": 0.0193,
+      "y": 0,
+      "w": 0.9587,
+      "h": 0.1724,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.7975,
+        "structure": 0.8628,
+        "color": 0.5523,
+        "colorIntersection": 0.3387,
+        "paletteMatch": 0.6674,
+        "detail": 0.8599,
+        "detailRaw": 0.8651,
+        "detailAdded": 0.0104,
+        "bands": 0.95
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 2577,
+          "h": 262
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 2577,
+          "h": 262
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "logo-mark",
+      "x": 0.0487,
+      "y": 0.075,
+      "w": 0.0357,
+      "h": 0.075,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.391,
+        "structure": 0.4558,
+        "color": 0.4137,
+        "colorIntersection": 0.1319,
+        "paletteMatch": 0.5654,
+        "detail": 0.2122,
+        "detailRaw": 0.3372,
+        "detailAdded": 0.25,
+        "bands": 0.5
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 5,
+          "y": 7,
+          "w": 89,
+          "h": 100
+        },
+        "build": {
+          "x": 0,
+          "y": 8,
+          "w": 85,
+          "h": 96
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "brand-name",
+      "x": 0.1042,
+      "y": 0.0921,
+      "w": 0.2734,
+      "h": 0.0461,
+      "kind": "text",
+      "score": {
+        "overall": 0.564,
+        "structure": 0.5429,
+        "color": 0.4816,
+        "colorIntersection": 0.213,
+        "paletteMatch": 0.6263,
+        "detail": 0.6716,
+        "detailRaw": 0.6976,
+        "detailAdded": 0.0521,
+        "bands": 0.7143
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 12,
+          "w": 731,
+          "h": 46
+        },
+        "build": {
+          "x": 0,
+          "y": 12,
+          "w": 647,
+          "h": 49
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "nav-links",
+      "x": 0.4721,
+      "y": 0.0921,
+      "w": 0.3646,
+      "h": 0.0461,
+      "kind": "text",
+      "score": {
+        "overall": 0.7097,
+        "structure": 0.776,
+        "color": 0.434,
+        "colorIntersection": 0.152,
+        "paletteMatch": 0.5858,
+        "detail": 0.7544,
+        "detailRaw": 0.8013,
+        "detailAdded": 0.0938,
+        "bands": 1
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 2,
+          "y": 12,
+          "w": 970,
+          "h": 44
+        },
+        "build": {
+          "x": 41,
+          "y": 12,
+          "w": 937,
+          "h": 45
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "nav-cta",
+      "x": 0.8605,
+      "y": 0.0803,
+      "w": 0.1016,
+      "h": 0.0632,
+      "kind": "control",
+      "score": {
+        "overall": 0.64,
+        "structure": 0.6746,
+        "color": 0.8082,
+        "colorIntersection": 0.7267,
+        "paletteMatch": 0.8521,
+        "detail": 0.2679,
+        "detailRaw": 0.3773,
+        "detailAdded": 0.2188,
+        "bands": 0.76
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 273,
+          "h": 96
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 273,
+          "h": 96
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+      ],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "headline",
+      "x": 0.0487,
+      "y": 0.2184,
+      "w": 0.4461,
+      "h": 0.1842,
+      "kind": "text",
+      "score": {
+        "overall": 0.5555,
+        "structure": 0.3727,
+        "color": 0.6285,
+        "colorIntersection": 0.404,
+        "paletteMatch": 0.7494,
+        "detail": 0.7468,
+        "detailRaw": 0.7624,
+        "detailAdded": 0.0313,
+        "bands": 1
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 11,
+          "w": 1192,
+          "h": 267
+        },
+        "build": {
+          "x": 4,
+          "y": 4,
+          "w": 1195,
+          "h": 260
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "subtext",
+      "x": 0.0506,
+      "y": 0.4283,
+      "w": 0.3564,
+      "h": 0.0783,
+      "kind": "text",
+      "score": {
+        "overall": 0.5394,
+        "structure": 0.4922,
+        "color": 0.6875,
+        "colorIntersection": 0.5024,
+        "paletteMatch": 0.7872,
+        "detail": 0.5258,
+        "detailRaw": 0.6404,
+        "detailAdded": 0.2292,
+        "bands": 0.425
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 8,
+          "w": 950,
+          "h": 108
+        },
+        "build": {
+          "x": 0,
+          "y": 2,
+          "w": 958,
+          "h": 103
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "btn-llamar",
+      "x": 0.0506,
+      "y": 0.5237,
+      "w": 0.1425,
+      "h": 0.0711,
+      "kind": "control",
+      "score": {
+        "overall": 0.5428,
+        "structure": 0.6558,
+        "color": 0.4716,
+        "colorIntersection": 0.1195,
+        "paletteMatch": 0.6612,
+        "detail": 0.4132,
+        "detailRaw": 0.5226,
+        "detailAdded": 0.2188,
+        "bands": 0.805
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 383,
+          "h": 108
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 383,
+          "h": 108
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "btn-whatsapp",
+      "x": 0.2031,
+      "y": 0.5237,
+      "w": 0.1518,
+      "h": 0.0711,
+      "kind": "control",
+      "score": {
+        "overall": 0.4847,
+        "structure": 0.4526,
+        "color": 0.5713,
+        "colorIntersection": 0.1745,
+        "paletteMatch": 0.785,
+        "detail": 0.4052,
+        "detailRaw": 0.5198,
+        "detailAdded": 0.2292,
+        "bands": 0.695
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 408,
+          "h": 108
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 408,
+          "h": 108
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "woman",
+      "x": 0.1469,
+      "y": 0.6,
+      "w": 0.1321,
+      "h": 0.3684,
+      "kind": "plate",
+      "score": {
+        "overall": 0.6493,
+        "structure": 0.6926,
+        "color": 0.8339,
+        "colorIntersection": 0.7077,
+        "paletteMatch": 0.9019,
+        "detail": 0.5621,
+        "detailRaw": 0.5725,
+        "detailAdded": 0.0208,
+        "bands": 0.5667
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 12,
+          "w": 355,
+          "h": 548
+        },
+        "build": {
+          "x": 0,
+          "y": 49,
+          "w": 355,
+          "h": 511
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "floor-line",
+      "x": 0,
+      "y": 0.9211,
+      "w": 0.5402,
+      "h": 0.0658,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.5692,
+        "structure": 0.7215,
+        "color": 0.6583,
+        "colorIntersection": 0.3704,
+        "paletteMatch": 0.8133,
+        "detail": 0.2896,
+        "detailRaw": 0.4927,
+        "detailAdded": 0.4063,
+        "bands": 0.5314
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 1452,
+          "h": 100
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 1452,
+          "h": 100
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "totem-panel",
+      "x": 0.5324,
+      "y": 0.1901,
+      "w": 0.2697,
+      "h": 0.7888,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.5467,
+        "structure": 0.3486,
+        "color": 0.4394,
+        "colorIntersection": 0.146,
+        "paletteMatch": 0.5974,
+        "detail": 0.6751,
+        "detailRaw": 0.6907,
+        "detailAdded": 0.0313,
+        "bands": 0.9739
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 725,
+          "h": 1199
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 725,
+          "h": 1197
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "totem-title",
+      "x": 0.5729,
+      "y": 0.2132,
+      "w": 0.1693,
+      "h": 0.0632,
+      "kind": "text",
+      "score": {
+        "overall": 0.4946,
+        "structure": 0.3685,
+        "color": 0.5187,
+        "colorIntersection": 0.2508,
+        "paletteMatch": 0.663,
+        "detail": 0.6186,
+        "detailRaw": 0.6915,
+        "detailAdded": 0.1458,
+        "bands": 0.8788
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 4,
+          "y": 14,
+          "w": 443,
+          "h": 72
+        },
+        "build": {
+          "x": 0,
+          "y": 17,
+          "w": 455,
+          "h": 76
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "row-varices",
+      "x": 0.5521,
+      "y": 0.2901,
+      "w": 0.2325,
+      "h": 0.1013,
+      "kind": "control",
+      "score": {
+        "overall": 0.4117,
+        "structure": 0.5723,
+        "color": 0.3959,
+        "colorIntersection": 0.0885,
+        "paletteMatch": 0.5615,
+        "detail": 0.0778,
+        "detailRaw": 0.2289,
+        "detailAdded": 0.3021,
+        "bands": 0.2571
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 18,
+          "w": 617,
+          "h": 136
+        },
+        "build": {
+          "x": 0,
+          "y": 7,
+          "w": 625,
+          "h": 129
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region row-varices (control) is contradicted (structure 57%, detail added 30%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "row-pelvica",
+      "x": 0.5521,
+      "y": 0.3934,
+      "w": 0.2325,
+      "h": 0.1039,
+      "kind": "control",
+      "score": {
+        "overall": 0.3918,
+        "structure": 0.4665,
+        "color": 0.412,
+        "colorIntersection": 0.1204,
+        "paletteMatch": 0.569,
+        "detail": 0.1882,
+        "detailRaw": 0.3445,
+        "detailAdded": 0.3125,
+        "bands": 0.6485
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 5,
+          "y": 24,
+          "w": 610,
+          "h": 125
+        },
+        "build": {
+          "x": 0,
+          "y": 3,
+          "w": 625,
+          "h": 155
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region row-pelvica (control) is contradicted (structure 47%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "row-caminar",
+      "x": 0.5521,
+      "y": 0.5007,
+      "w": 0.2325,
+      "h": 0.1,
+      "kind": "control",
+      "score": {
+        "overall": 0.4577,
+        "structure": 0.4739,
+        "color": 0.4608,
+        "colorIntersection": 0.084,
+        "paletteMatch": 0.6636,
+        "detail": 0.4161,
+        "detailRaw": 0.5203,
+        "detailAdded": 0.2083,
+        "bands": 0.6833
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 0,
+          "w": 617,
+          "h": 144
+        },
+        "build": {
+          "x": 0,
+          "y": 12,
+          "w": 625,
+          "h": 130
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region row-caminar (control) is contradicted (structure 47%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "row-pie",
+      "x": 0.5521,
+      "y": 0.6033,
+      "w": 0.2325,
+      "h": 0.1072,
+      "kind": "control",
+      "score": {
+        "overall": 0.4416,
+        "structure": 0.552,
+        "color": 0.4145,
+        "colorIntersection": 0.1112,
+        "paletteMatch": 0.5777,
+        "detail": 0.2406,
+        "detailRaw": 0.3552,
+        "detailAdded": 0.2292,
+        "bands": 0.7987
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 1,
+          "w": 617,
+          "h": 152
+        },
+        "build": {
+          "x": 0,
+          "y": 9,
+          "w": 625,
+          "h": 149
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "row-prueba",
+      "x": 0.5521,
+      "y": 0.7138,
+      "w": 0.2325,
+      "h": 0.1092,
+      "kind": "control",
+      "score": {
+        "overall": 0.4019,
+        "structure": 0.4116,
+        "color": 0.4544,
+        "colorIntersection": 0.1393,
+        "paletteMatch": 0.6241,
+        "detail": 0.288,
+        "detailRaw": 0.3713,
+        "detailAdded": 0.1667,
+        "bands": 0.9143
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 2,
+          "w": 617,
+          "h": 158
+        },
+        "build": {
+          "x": 0,
+          "y": 14,
+          "w": 625,
+          "h": 152
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+      ],
+      "rawVerdict": "contradicted"
+    },
+    {
+      "id": "row-urgencias",
+      "x": 0.5469,
+      "y": 0.8263,
+      "w": 0.2418,
+      "h": 0.1,
+      "kind": "control",
+      "score": {
+        "overall": 0.4699,
+        "structure": 0.5313,
+        "color": 0.5245,
+        "colorIntersection": 0.1119,
+        "paletteMatch": 0.7467,
+        "detail": 0.2363,
+        "detailRaw": 0.3092,
+        "detailAdded": 0.1458,
+        "bands": 0.54
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 650,
+          "h": 152
+        },
+        "build": {
+          "x": 20,
+          "y": 14,
+          "w": 605,
+          "h": 131
+        }
+      },
+      "blocking": true,
+      "blockingReasons": [
+        "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+      ],
+      "rawVerdict": "drift"
+    },
+    {
+      "id": "routes",
+      "x": 0.7954,
+      "y": 0.3224,
+      "w": 0.2046,
+      "h": 0.6776,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.6951,
+        "structure": 0.5447,
+        "color": 0.883,
+        "colorIntersection": 0.7556,
+        "paletteMatch": 0.9516,
+        "detail": 0.6288,
+        "detailRaw": 0.6861,
+        "detailAdded": 0.1146,
+        "bands": 0.8431
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 550,
+          "h": 1030
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 471,
+          "h": 1026
+        }
+      },
+      "blocking": false,
+      "blockingReasons": [],
+      "rawVerdict": "drift"
+    }
+  ],
+  "files": {
+    "sideBySide": "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/side-by-side.png",
+    "heatmap": "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/heatmap.png",
+    "regionFiles": [
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/nav-sign.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/logo-mark.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/brand-name.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/nav-links.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/nav-cta.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/headline.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/subtext.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/btn-llamar.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/btn-whatsapp.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/woman.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/floor-line.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/totem-panel.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/totem-title.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-varices.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-pelvica.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-caminar.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-pie.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-prueba.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/row-urgencias.png",
+      "/home/user/Claude/web-cirugia-vascular/.impeccable/review/diff/hero/regions/routes.png"
+    ]
+  },
+  "interpretation": "hero-gate",
+  "measurementsAvailable": true,
+  "gate": {
+    "ok": false,
+    "reasons": [
+      "region brand-name (text) is contradicted (structure 54%, detail added 5%): the composition of this text region differs from the comp; re-derive it from the spec box",
+      "region btn-llamar (control) is contradicted (structure 66%, detail added 22%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region btn-whatsapp (control) is contradicted (structure 45%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region row-varices (control) is contradicted (structure 57%, detail added 30%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region row-pelvica (control) is contradicted (structure 47%, detail added 31%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region row-caminar (control) is contradicted (structure 47%, detail added 21%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region row-pie (control) is contradicted (structure 55%, detail added 23%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "region row-prueba (control) is contradicted (structure 41%, detail added 17%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+      "control nav-cta drifts to 64% (structure 67%, color 81%): open .impeccable/review/diff/hero/regions/nav-cta.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+      "control row-urgencias drifts to 47% (structure 53%, color 52%): open .impeccable/review/diff/hero/regions/row-urgencias.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+    ],
+    "advisories": [
+      "(advisory, above the 72% bar; fix in the polish pass before responsive) 2 readings:",
+      "  text row-pelvica: cap height 34px in the build, 73.7px in the comp (-54%); set font-size so the cap height renders at 73.7px",
+      "  control row-caminar: its rule sits 1px into the box in the comp and 11px in the build (+10px), so the strip is taller than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) text nav-links: letter-spacing is wider than the comp's (gap 0.119 vs 0.061 of the cap height); set letter-spacing to close it by about 2px",
+      "(advisory, unchanged for 3+ attempts) text subtext: letter-spacing is wider than the comp's (gap 0.149 vs 0.085 of the cap height); set letter-spacing to close it by about 2px",
+      "(advisory, unchanged for 3+ attempts) text btn-whatsapp: cap height 52.5px in the build, 38.4px in the comp (+37%); set font-size so the cap height renders at 38.4px",
+      "(advisory, unchanged for 3+ attempts) text row-varices: cap height 33.5px in the build, 48.6px in the comp (-31%); set font-size so the cap height renders at 48.6px",
+      "(advisory, unchanged for 3+ attempts) text row-prueba: cap height 29px in the build, 40px in the comp (-28%); set font-size so the cap height renders at 40px",
+      "(advisory, unchanged for 3+ attempts) text nav-cta: ink is #0a2868 in the build, #f7f8f8 in the comp; use the comp's colour",
+      "(advisory, unchanged for 3+ attempts) text row-caminar: ink is #f3f5f8 in the build, #8d99b2 in the comp; use the comp's colour",
+      "(advisory, unchanged for 3+ attempts) control btn-llamar: its rule sits 1px into the box in the comp and 104px in the build (+103px), so the strip is taller than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) control btn-whatsapp: its rule sits 2px into the box in the comp and 104px in the build (+102px), so the strip is taller than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) chrome floor-line: its rule sits 16px into the box in the comp and 29px in the build (+13px), so the strip is taller than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) control row-varices: its rule sits 149px into the box in the comp and 6px in the build (-143px), so the strip is shorter than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) control row-pie: its rule sits 1px into the box in the comp and 155px in the build (+154px), so the strip is taller than the comp's; match the height, not only the position",
+      "(advisory, unchanged for 3+ attempts) control row-prueba: its rule sits 1px into the box in the comp and 159px in the build (+158px), so the strip is taller than the comp's; match the height, not only the position"
+    ],
+    "unscopedReasons": []
+  },
+  "rawReport": ".impeccable/review/diff/hero/raw-report.json"
+}

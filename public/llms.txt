@@ -1,9 +1,10 @@
-# Dr. David García · Cirujano vascular en Ciudad Real
+# Dr. David García, cirujano vascular en Ciudad Real
 
-> Consulta de Angiología y Cirugía Vascular en Ciudad Real (Castilla-La Mancha, España). Diagnóstico con eco-doppler y tratamiento de varices, pie diabético, enfermedad arterial periférica, aneurisma de aorta, trombosis venosa, úlceras y estenosis carotídea.
+> Consulta de Angiología y Cirugía Vascular en Ciudad Real (Castilla-La Mancha, España). Diagnóstico con eco-doppler y tratamiento de varices, congestión venosa pélvica, enfermedad arterial periférica, pie diabético, aneurisma de aorta, trombosis venosa, úlceras y estenosis carotídea.
 
-## Tratamientos
+## Consultas
 - [Tratamiento de varices en Ciudad Real](https://www.cirujanovascularciudadreal.es/tratamiento-varices-ciudad-real/): Piernas cansadas, arañas vasculares y varices: estudio con eco-doppler y tratamiento a medida.
+- [Congestión venosa pélvica](https://www.cirujanovascularciudadreal.es/congestion-venosa-pelvica/): Dolor pélvico que empeora de pie, varices vulvares o varices de las piernas que vuelven.
 - [Pie diabético: revisar la circulación a tiempo](https://www.cirujanovascularciudadreal.es/pie-diabetico-ciudad-real/): Heridas que no curan, dedos fríos o de color oscuro: revisar el riego salva piernas.
 - [Mala circulación en las piernas y dolor al caminar](https://www.cirujanovascularciudadreal.es/enfermedad-arterial-periferica/): Dolor en la pantorrilla al caminar que te obliga a parar: las arterias piden atención.
 - [Aneurisma de aorta abdominal](https://www.cirujanovascularciudadreal.es/aneurisma-aorta-abdominal/): Una dilatación silenciosa de la arteria principal. Se detecta con una ecografía sencilla.
@@ -13,5 +14,5 @@
 - [Eco-doppler vascular en Ciudad Real](https://www.cirujanovascularciudadreal.es/eco-doppler-ciudad-real/): La prueba clave de la cirugía vascular: sin radiación, sin pinchazos y con resultado en el momento.
 
 ## Consulta
-- [Sobre el doctor](https://www.cirujanovascularciudadreal.es/sobre-mi/)
+- [El doctor](https://www.cirujanovascularciudadreal.es/sobre-mi/)
 - [Pedir cita](https://www.cirujanovascularciudadreal.es/contacto/)

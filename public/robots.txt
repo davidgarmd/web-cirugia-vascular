@@ -1,4 +1,3 @@
-# Buscadores y asistentes de IA pueden rastrear toda la web.
 User-agent: *
 Allow: /
 

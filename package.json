@@ -1,0 +1,5 @@
+{
+  "name": "web-cirugia-vascular",
+  "private": true,
+  "description": "Herramientas de desarrollo (Playwright para capturas y medición de fuentes). La web no depende de Node."
+}
