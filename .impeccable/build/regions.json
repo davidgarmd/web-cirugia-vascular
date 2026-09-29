@@ -1,0 +1,20 @@
+{ "regions": [
+  { "id": "logo-mark", "kind": "chrome", "pixelBox": {"x": 58, "y": 35, "w": 110, "h": 108}, "note": "navy square mark with a light-blue curved vessel line" },
+  { "id": "brand-name", "kind": "text", "pixelBox": {"x": 190, "y": 44, "w": 385, "h": 98}, "note": "Dr. David García / Cirugía Vascular · Ciudad Real" },
+  { "id": "nav-links", "kind": "text", "pixelBox": {"x": 1595, "y": 66, "w": 790, "h": 58}, "note": "Tratamientos, Eco-doppler, El doctor, Blog" },
+  { "id": "nav-cta", "kind": "control", "pixelBox": {"x": 2430, "y": 54, "w": 220, "h": 78}, "note": "navy pill button Pedir cita" },
+  { "id": "headline", "kind": "text", "pixelBox": {"x": 110, "y": 285, "w": 1182, "h": 315}, "note": "Cirujano vascular en Ciudad Real, two lines, extra-bold navy" },
+  { "id": "subtext", "kind": "text", "pixelBox": {"x": 115, "y": 615, "w": 1105, "h": 120}, "note": "two lines of body text about varices, congestion pelvica, eco-doppler" },
+  { "id": "btn-llamar", "kind": "control", "pixelBox": {"x": 115, "y": 768, "w": 334, "h": 118}, "note": "navy rounded button with phone icon Llamar" },
+  { "id": "btn-whatsapp", "kind": "control", "pixelBox": {"x": 493, "y": 768, "w": 380, "h": 118}, "note": "green rounded button WhatsApp" },
+  { "id": "couple", "kind": "plate", "pixelBox": {"x": 530, "y": 790, "w": 600, "h": 625}, "note": "flat editorial illustration of an older woman and man walking" },
+  { "id": "totem-panel", "kind": "chrome", "pixelBox": {"x": 1462, "y": 200, "w": 668, "h": 1180}, "note": "tall navy directory sign panel with base plinth", "container": true },
+  { "id": "totem-title", "kind": "text", "pixelBox": {"x": 1545, "y": 250, "w": 455, "h": 95}, "note": "¿Qué notas? white sign lettering" },
+  { "id": "row-varices", "kind": "control", "pixelBox": {"x": 1500, "y": 366, "w": 612, "h": 152}, "parentId": "totem-panel", "reviewGroup": "totem-row", "note": "pictogram, Me pesan las piernas, Varices, arrow" },
+  { "id": "row-pelvica", "kind": "control", "pixelBox": {"x": 1500, "y": 520, "w": 612, "h": 166}, "parentId": "totem-panel", "reviewGroup": "totem-row", "note": "pictogram, Dolor pélvico y varices vulvares, Congestión pélvica, arrow" },
+  { "id": "row-caminar", "kind": "control", "pixelBox": {"x": 1500, "y": 690, "w": 612, "h": 160}, "parentId": "totem-panel", "reviewGroup": "totem-row", "note": "pictogram, Me duele al caminar, Mala circulación, arrow" },
+  { "id": "row-pie", "kind": "control", "pixelBox": {"x": 1500, "y": 852, "w": 612, "h": 170}, "parentId": "totem-panel", "reviewGroup": "totem-row", "note": "pictogram, Una herida en el pie que no cura, Pie diabético, arrow" },
+  { "id": "row-urgencias", "kind": "control", "pixelBox": {"x": 1500, "y": 1024, "w": 612, "h": 182}, "parentId": "totem-panel", "note": "red alarm pictogram, Pierna hinchada de golpe, Urgencias, red arrow" },
+  { "id": "routes", "kind": "chrome", "pixelBox": {"x": 2110, "y": 405, "w": 578, "h": 1115}, "note": "four light-blue and one red route lines with white flow dashes leaving the totem rows and curving down" },
+  { "id": "floor-line", "kind": "chrome", "pixelBox": {"x": 0, "y": 1360, "w": 2110, "h": 160}, "note": "light-blue floor guide line and red route line along the bottom" }
+] }

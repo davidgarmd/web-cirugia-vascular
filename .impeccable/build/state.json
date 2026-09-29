@@ -1,0 +1,91 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-29T10:28:50.907Z",
+  "comp": ".impeccable/mocks/comp-a-totem.png",
+  "direction": "a0578fdf",
+  "breakpoint": "2688x1520",
+  "artifact": "public/index.html",
+  "phase": "spec",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-09-29T10:28:50.907Z",
+      "closedAt": "2026-09-29T10:32:24.690Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "3 comps, 1 approved",
+        "approved": ".impeccable/mocks/comp-a-totem.png",
+        "at": "2026-09-29T10:32:24.690Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "open",
+      "openedAt": "2026-09-29T10:32:24.756Z",
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "plates": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "hero": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "sections": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "motion": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "responsive": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null
+}

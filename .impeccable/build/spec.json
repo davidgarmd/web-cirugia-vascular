@@ -1,0 +1,1081 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-29T10:33:05.186Z",
+  "comp": ".impeccable/mocks/comp-a-totem.png",
+  "warnings": [
+    "region couple: the artwork runs off the box on the top (its ink reaches the edge over 35% of that side). Widen the region so the box holds the whole shape with a margin; a plate placed with object-fit: cover on this box would be cut there.",
+    "region totem-panel: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+  ],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 2688,
+    "height": 1520
+  },
+  "aspect": 1.7684,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#f8f8f8",
+      "coverage": 0.6986
+    },
+    {
+      "hex": "#092756",
+      "coverage": 0.2142
+    },
+    {
+      "hex": "#6dc9f7",
+      "coverage": 0.0637
+    },
+    {
+      "hex": "#08144f",
+      "coverage": 0.0145
+    },
+    {
+      "hex": "#f75f53",
+      "coverage": 0.0089
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0417,
+      "strength": 0.2909
+    },
+    {
+      "y": 0.0833,
+      "strength": 0.3372
+    },
+    {
+      "y": 0.1389,
+      "strength": 0.6371
+    },
+    {
+      "y": 0.2222,
+      "strength": 0.5552
+    },
+    {
+      "y": 0.2639,
+      "strength": 0.5907
+    },
+    {
+      "y": 0.3194,
+      "strength": 0.3036
+    },
+    {
+      "y": 0.375,
+      "strength": 0.4359
+    },
+    {
+      "y": 0.4167,
+      "strength": 0.3407
+    },
+    {
+      "y": 0.4583,
+      "strength": 0.3992
+    },
+    {
+      "y": 0.5139,
+      "strength": 0.3998
+    },
+    {
+      "y": 0.5833,
+      "strength": 0.6684
+    },
+    {
+      "y": 0.9028,
+      "strength": 0.3542
+    },
+    {
+      "y": 0.9306,
+      "strength": 0.8211
+    },
+    {
+      "y": 0.9722,
+      "strength": 0.3018
+    }
+  ],
+  "regions": [
+    {
+      "id": "logo-mark",
+      "kind": "chrome",
+      "note": "navy square mark with a light-blue curved vessel line",
+      "grid": null,
+      "box": {
+        "x": 0.0216,
+        "y": 0.023,
+        "w": 0.0409,
+        "h": 0.0711
+      },
+      "px": {
+        "x": 58,
+        "y": 35,
+        "w": 110,
+        "h": 108
+      },
+      "aspect": 1.0185,
+      "palette": [
+        {
+          "hex": "#081b51",
+          "coverage": 0.835
+        },
+        {
+          "hex": "#66c7f1",
+          "coverage": 0.0947
+        },
+        {
+          "hex": "#092748",
+          "coverage": 0.0313
+        },
+        {
+          "hex": "#c5c8d8",
+          "coverage": 0.026
+        },
+        {
+          "hex": "#438fbf",
+          "coverage": 0.013
+        }
+      ],
+      "detail": {
+        "energy": 10.5016
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "brand-name",
+      "kind": "text",
+      "note": "Dr. David García / Cirugía Vascular · Ciudad Real",
+      "grid": null,
+      "box": {
+        "x": 0.0707,
+        "y": 0.0289,
+        "w": 0.1432,
+        "h": 0.0645
+      },
+      "px": {
+        "x": 190,
+        "y": 44,
+        "w": 385,
+        "h": 98
+      },
+      "aspect": 3.9286,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.8445
+        },
+        {
+          "hex": "#0a1a4e",
+          "coverage": 0.0955
+        },
+        {
+          "hex": "#cfd1df",
+          "coverage": 0.025
+        },
+        {
+          "hex": "#596586",
+          "coverage": 0.0207
+        },
+        {
+          "hex": "#8c93b0",
+          "coverage": 0.0143
+        }
+      ],
+      "detail": {
+        "energy": 63.4374
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 37,
+          "capHeightPx": 25.7,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5543,
+          "advTall": 0.6005,
+          "advX": 0.5543,
+          "gap": 0.1386,
+          "xRatio": 0.715,
+          "stemW": 0.1314,
+          "contrast": 0.9669,
+          "serif": 0.756,
+          "densTall": 0.5465,
+          "densX": 0.4962,
+          "weight": 0.5465
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "nav-links",
+      "kind": "text",
+      "note": "Tratamientos, Eco-doppler, El doctor, Blog",
+      "grid": null,
+      "box": {
+        "x": 0.5934,
+        "y": 0.0434,
+        "w": 0.2939,
+        "h": 0.0382
+      },
+      "px": {
+        "x": 1595,
+        "y": 66,
+        "w": 790,
+        "h": 58
+      },
+      "aspect": 13.6207,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.9132
+        },
+        {
+          "hex": "#081248",
+          "coverage": 0.0519
+        },
+        {
+          "hex": "#aab1c4",
+          "coverage": 0.0173
+        },
+        {
+          "hex": "#6d7c9a",
+          "coverage": 0.01
+        },
+        {
+          "hex": "#182e5e",
+          "coverage": 0.0077
+        }
+      ],
+      "detail": {
+        "energy": 43.7006
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 35,
+          "capHeightPx": 22,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5919,
+          "advTall": 0.4553,
+          "advX": 0.6033,
+          "gap": 0.1138,
+          "xRatio": 0.7221,
+          "stemW": 0.16,
+          "contrast": 1.0659,
+          "serif": 1.0597,
+          "densTall": 0.5864,
+          "densX": 0.5489,
+          "weight": 0.5864
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "note": "navy pill button Pedir cita",
+      "grid": null,
+      "box": {
+        "x": 0.904,
+        "y": 0.0355,
+        "w": 0.0818,
+        "h": 0.0513
+      },
+      "px": {
+        "x": 2430,
+        "y": 54,
+        "w": 220,
+        "h": 78
+      },
+      "aspect": 2.8205,
+      "palette": [
+        {
+          "hex": "#081a51",
+          "coverage": 0.785
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.1565
+        },
+        {
+          "hex": "#0f2a4c",
+          "coverage": 0.0332
+        },
+        {
+          "hex": "#b2b5cb",
+          "coverage": 0.0132
+        },
+        {
+          "hex": "#8188a2",
+          "coverage": 0.0121
+        }
+      ],
+      "detail": {
+        "energy": 28.5038
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "note": "Cirujano vascular en Ciudad Real, two lines, extra-bold navy",
+      "grid": null,
+      "box": {
+        "x": 0.0409,
+        "y": 0.1875,
+        "w": 0.4397,
+        "h": 0.2072
+      },
+      "px": {
+        "x": 110,
+        "y": 285,
+        "w": 1182,
+        "h": 315
+      },
+      "aspect": 3.7524,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.6133
+        },
+        {
+          "hex": "#082655",
+          "coverage": 0.3083
+        },
+        {
+          "hex": "#081451",
+          "coverage": 0.0649
+        },
+        {
+          "hex": "#b8bccc",
+          "coverage": 0.0085
+        },
+        {
+          "hex": "#4d5a7f",
+          "coverage": 0.005
+        }
+      ],
+      "detail": {
+        "energy": 73.3939
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 27,
+          "capHeightPx": 119.1,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6502,
+          "advTall": 0.7407,
+          "advX": 0.6502,
+          "gap": 0.0658,
+          "xRatio": 0.7155,
+          "stemW": 0.242,
+          "contrast": 1.1297,
+          "serif": 0.9954,
+          "densTall": 0.7458,
+          "densX": 0.7303,
+          "weight": 0.7458
+        },
+        "widthClass": "normal",
+        "weightClass": "black",
+        "chosen": {
+          "family": "Winky Sans",
+          "weight": 700,
+          "fontSizePx": 170,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "f708bc5abd32"
+        }
+      }
+    },
+    {
+      "id": "subtext",
+      "kind": "text",
+      "note": "two lines of body text about varices, congestion pelvica, eco-doppler",
+      "grid": null,
+      "box": {
+        "x": 0.0428,
+        "y": 0.4046,
+        "w": 0.4111,
+        "h": 0.0789
+      },
+      "px": {
+        "x": 115,
+        "y": 615,
+        "w": 1105,
+        "h": 120
+      },
+      "aspect": 9.2083,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.8432
+        },
+        {
+          "hex": "#0a184d",
+          "coverage": 0.1009
+        },
+        {
+          "hex": "#505e7e",
+          "coverage": 0.0206
+        },
+        {
+          "hex": "#c6cad5",
+          "coverage": 0.0179
+        },
+        {
+          "hex": "#909aae",
+          "coverage": 0.0174
+        }
+      ],
+      "detail": {
+        "energy": 75.0053
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 92,
+          "capHeightPx": 31.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.571,
+          "advTall": 0.1587,
+          "advX": 0.5714,
+          "gap": 0.127,
+          "xRatio": 0.714,
+          "stemW": 0.1397,
+          "contrast": 1.0531,
+          "serif": 0.5385,
+          "densTall": 0.7392,
+          "densX": 0.5102,
+          "weight": 0.7392
+        },
+        "widthClass": "condensed",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "btn-llamar",
+      "kind": "control",
+      "note": "navy rounded button with phone icon Llamar",
+      "grid": null,
+      "box": {
+        "x": 0.0428,
+        "y": 0.5053,
+        "w": 0.1243,
+        "h": 0.0776
+      },
+      "px": {
+        "x": 115,
+        "y": 768,
+        "w": 334,
+        "h": 118
+      },
+      "aspect": 2.8305,
+      "palette": [
+        {
+          "hex": "#082757",
+          "coverage": 0.7843
+        },
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.1642
+        },
+        {
+          "hex": "#677292",
+          "coverage": 0.0257
+        },
+        {
+          "hex": "#080a40",
+          "coverage": 0.0184
+        },
+        {
+          "hex": "#37476f",
+          "coverage": 0.0075
+        }
+      ],
+      "detail": {
+        "energy": 29.4574
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "btn-whatsapp",
+      "kind": "control",
+      "note": "green rounded button WhatsApp",
+      "grid": null,
+      "box": {
+        "x": 0.1834,
+        "y": 0.5053,
+        "w": 0.1414,
+        "h": 0.0776
+      },
+      "px": {
+        "x": 493,
+        "y": 768,
+        "w": 380,
+        "h": 118
+      },
+      "aspect": 3.2203,
+      "palette": [
+        {
+          "hex": "#489f57",
+          "coverage": 0.7388
+        },
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.1723
+        },
+        {
+          "hex": "#87c092",
+          "coverage": 0.0392
+        },
+        {
+          "hex": "#b7b7b7",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#c7e4cd",
+          "coverage": 0.0209
+        }
+      ],
+      "detail": {
+        "energy": 24.8119
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "couple",
+      "kind": "plate",
+      "note": "flat editorial illustration of an older woman and man walking",
+      "grid": null,
+      "box": {
+        "x": 0.1972,
+        "y": 0.5197,
+        "w": 0.2232,
+        "h": 0.4112
+      },
+      "px": {
+        "x": 530,
+        "y": 790,
+        "w": 600,
+        "h": 625
+      },
+      "aspect": 0.96,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.5642
+        },
+        {
+          "hex": "#142f5d",
+          "coverage": 0.1643
+        },
+        {
+          "hex": "#7ccaf1",
+          "coverage": 0.1247
+        },
+        {
+          "hex": "#519fda",
+          "coverage": 0.0759
+        },
+        {
+          "hex": "#48a058",
+          "coverage": 0.0708
+        }
+      ],
+      "detail": {
+        "energy": 20.0784
+      },
+      "medium": "raster",
+      "clipped": [
+        "top"
+      ],
+      "plate": "assets/plates/couple.png",
+      "text": null
+    },
+    {
+      "id": "totem-panel",
+      "kind": "chrome",
+      "note": "tall navy directory sign panel with base plinth",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.5439,
+        "y": 0.1316,
+        "w": 0.2485,
+        "h": 0.7763
+      },
+      "px": {
+        "x": 1462,
+        "y": 200,
+        "w": 668,
+        "h": 1180
+      },
+      "aspect": 0.5661,
+      "palette": [
+        {
+          "hex": "#082756",
+          "coverage": 0.804
+        },
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.1303
+        },
+        {
+          "hex": "#344f7a",
+          "coverage": 0.0399
+        },
+        {
+          "hex": "#64c8f6",
+          "coverage": 0.0131
+        },
+        {
+          "hex": "#080c42",
+          "coverage": 0.0127
+        }
+      ],
+      "detail": {
+        "energy": 35.849
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "totem-title",
+      "kind": "text",
+      "note": "¿Qué notas? white sign lettering",
+      "grid": null,
+      "box": {
+        "x": 0.5748,
+        "y": 0.1645,
+        "w": 0.1693,
+        "h": 0.0625
+      },
+      "px": {
+        "x": 1545,
+        "y": 250,
+        "w": 455,
+        "h": 95
+      },
+      "aspect": 4.7895,
+      "palette": [
+        {
+          "hex": "#082755",
+          "coverage": 0.6949
+        },
+        {
+          "hex": "#f7f8f8",
+          "coverage": 0.2584
+        },
+        {
+          "hex": "#080b41",
+          "coverage": 0.0255
+        },
+        {
+          "hex": "#c8cddc",
+          "coverage": 0.0114
+        },
+        {
+          "hex": "#8e96ae",
+          "coverage": 0.0099
+        }
+      ],
+      "detail": {
+        "energy": 51.8554
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 8,
+          "capHeightPx": 58.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6702,
+          "advTall": 0.6874,
+          "advX": 0.6702,
+          "gap": 0.0859,
+          "xRatio": 0.7218,
+          "stemW": 0.2228,
+          "contrast": 1.1385,
+          "serif": null,
+          "densTall": 0.5442,
+          "densX": 0.7102,
+          "weight": 0.5442
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "row-varices",
+      "kind": "control",
+      "note": "pictogram, Me pesan las piernas, Varices, arrow",
+      "grid": null,
+      "parentId": "totem-panel",
+      "reviewGroup": "totem-row",
+      "box": {
+        "x": 0.558,
+        "y": 0.2408,
+        "w": 0.2277,
+        "h": 0.1
+      },
+      "px": {
+        "x": 1500,
+        "y": 366,
+        "w": 612,
+        "h": 152
+      },
+      "aspect": 4.0263,
+      "palette": [
+        {
+          "hex": "#082857",
+          "coverage": 0.8994
+        },
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.0691
+        },
+        {
+          "hex": "#080a35",
+          "coverage": 0.0206
+        },
+        {
+          "hex": "#959cb5",
+          "coverage": 0.0063
+        },
+        {
+          "hex": "#223757",
+          "coverage": 0.0046
+        }
+      ],
+      "detail": {
+        "energy": 34.8058
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "row-pelvica",
+      "kind": "control",
+      "note": "pictogram, Dolor pélvico y varices vulvares, Congestión pélvica, arrow",
+      "grid": null,
+      "parentId": "totem-panel",
+      "reviewGroup": "totem-row",
+      "box": {
+        "x": 0.558,
+        "y": 0.3421,
+        "w": 0.2277,
+        "h": 0.1092
+      },
+      "px": {
+        "x": 1500,
+        "y": 520,
+        "w": 612,
+        "h": 166
+      },
+      "aspect": 3.6867,
+      "palette": [
+        {
+          "hex": "#082755",
+          "coverage": 0.8661
+        },
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.091
+        },
+        {
+          "hex": "#080834",
+          "coverage": 0.0184
+        },
+        {
+          "hex": "#bfc1d3",
+          "coverage": 0.0123
+        },
+        {
+          "hex": "#546382",
+          "coverage": 0.0121
+        }
+      ],
+      "detail": {
+        "energy": 52.3678
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "row-caminar",
+      "kind": "control",
+      "note": "pictogram, Me duele al caminar, Mala circulación, arrow",
+      "grid": null,
+      "parentId": "totem-panel",
+      "reviewGroup": "totem-row",
+      "box": {
+        "x": 0.558,
+        "y": 0.4539,
+        "w": 0.2277,
+        "h": 0.1053
+      },
+      "px": {
+        "x": 1500,
+        "y": 690,
+        "w": 612,
+        "h": 160
+      },
+      "aspect": 3.825,
+      "palette": [
+        {
+          "hex": "#082756",
+          "coverage": 0.8492
+        },
+        {
+          "hex": "#f6f6f7",
+          "coverage": 0.0785
+        },
+        {
+          "hex": "#354875",
+          "coverage": 0.0467
+        },
+        {
+          "hex": "#080d44",
+          "coverage": 0.0157
+        },
+        {
+          "hex": "#9099b2",
+          "coverage": 0.0099
+        }
+      ],
+      "detail": {
+        "energy": 43.7172
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "row-pie",
+      "kind": "control",
+      "note": "pictogram, Una herida en el pie que no cura, Pie diabético, arrow",
+      "grid": null,
+      "parentId": "totem-panel",
+      "reviewGroup": "totem-row",
+      "box": {
+        "x": 0.558,
+        "y": 0.5605,
+        "w": 0.2277,
+        "h": 0.1118
+      },
+      "px": {
+        "x": 1500,
+        "y": 852,
+        "w": 612,
+        "h": 170
+      },
+      "aspect": 3.6,
+      "palette": [
+        {
+          "hex": "#082756",
+          "coverage": 0.8636
+        },
+        {
+          "hex": "#f5f6f7",
+          "coverage": 0.0944
+        },
+        {
+          "hex": "#080b41",
+          "coverage": 0.0164
+        },
+        {
+          "hex": "#29476f",
+          "coverage": 0.0161
+        },
+        {
+          "hex": "#b5bacb",
+          "coverage": 0.0095
+        }
+      ],
+      "detail": {
+        "energy": 46.4879
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "row-urgencias",
+      "kind": "control",
+      "note": "red alarm pictogram, Pierna hinchada de golpe, Urgencias, red arrow",
+      "grid": null,
+      "parentId": "totem-panel",
+      "box": {
+        "x": 0.558,
+        "y": 0.6737,
+        "w": 0.2277,
+        "h": 0.1197
+      },
+      "px": {
+        "x": 1500,
+        "y": 1024,
+        "w": 612,
+        "h": 182
+      },
+      "aspect": 3.3626,
+      "palette": [
+        {
+          "hex": "#092856",
+          "coverage": 0.8807
+        },
+        {
+          "hex": "#f57a71",
+          "coverage": 0.0894
+        },
+        {
+          "hex": "#081d5d",
+          "coverage": 0.0102
+        },
+        {
+          "hex": "#2b4369",
+          "coverage": 0.0101
+        },
+        {
+          "hex": "#b86468",
+          "coverage": 0.0097
+        }
+      ],
+      "detail": {
+        "energy": 24.6633
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "routes",
+      "kind": "chrome",
+      "note": "four light-blue and one red route lines with white flow dashes leaving the totem rows and curving down",
+      "grid": null,
+      "box": {
+        "x": 0.785,
+        "y": 0.2664,
+        "w": 0.215,
+        "h": 0.7336
+      },
+      "px": {
+        "x": 2110,
+        "y": 405,
+        "w": 578,
+        "h": 1115
+      },
+      "aspect": 0.5184,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.7464
+        },
+        {
+          "hex": "#6bc9f8",
+          "coverage": 0.2258
+        },
+        {
+          "hex": "#f75f51",
+          "coverage": 0.0166
+        },
+        {
+          "hex": "#b4e5f8",
+          "coverage": 0.0106
+        },
+        {
+          "hex": "#082858",
+          "coverage": 0.0006
+        }
+      ],
+      "detail": {
+        "energy": 9.1166
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "floor-line",
+      "kind": "chrome",
+      "note": "light-blue floor guide line and red route line along the bottom",
+      "grid": null,
+      "box": {
+        "x": 0,
+        "y": 0.8947,
+        "w": 0.785,
+        "h": 0.1053
+      },
+      "px": {
+        "x": 0,
+        "y": 1360,
+        "w": 2110,
+        "h": 160
+      },
+      "aspect": 13.1875,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.6521
+        },
+        {
+          "hex": "#67c8f7",
+          "coverage": 0.2503
+        },
+        {
+          "hex": "#f75e53",
+          "coverage": 0.0654
+        },
+        {
+          "hex": "#0d2b5b",
+          "coverage": 0.0272
+        },
+        {
+          "hex": "#f89888",
+          "coverage": 0.005
+        }
+      ],
+      "detail": {
+        "energy": 30.0726
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ],
+  "compSha256": "e642360e5a088743380e25d1cb06acfcc70876b9513300740875b658fe20aeca",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "de8b3caf13d307dd6a0ecbb6f29fea6489077241f7649f3cfc200a6a4a1823fb"
+  }
+}
