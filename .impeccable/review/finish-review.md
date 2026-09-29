@@ -83,3 +83,43 @@ Keep the desktop hero composition exactly: the hanging nav sign, the navy totem 
 - **Abbreviation:** RAE form "n.º", not "Nº", in "Nº col.", "Nº de colegiado" and "Nº de inscripción".
 - **Wording:** the pelvic page says "casi siempre de la vena ovárica". "Con frecuencia de la vena ovárica" is more accurate, since internal iliac tributaries are often involved. Optional.
 - **Placeholders:** phone, address, centre name, colegiado and registry numbers are still bracketed placeholders. They are marked correctly, but launch-blocking, and the Llamar/WhatsApp links must point to real numbers before going live.
+
+---
+
+# Verdict pass (recaptures of 19:00)
+
+Check 0 on the recaptures: **fail**. In `mobile.png` the body map ("De cuello a pies") is still a blank area about 330px tall (capture y≈1100-1430). The coordinator's note says the image now loads, but the capture shows otherwise. The markup no longer has `loading="lazy"` (it is eager + `decoding="async"`), so this may be a real rendering defect rather than a capture artifact. It cannot be judged until a viewport-sized capture (not full-page), scrolled to the section at 390×844, shows the figure. The other four captures and the hero diff are valid, so they are scored below.
+
+## verdict
+
+| # | Material fix | Score | What the recaptures show |
+|---|---|---|---|
+| 1 | Totem pictograms | **partial** | The uterus, siren, report and walker read clearly, and the icons are larger. But the authored leg (row 1) and foot (row 4) are near-identical L-shaped outlines that can't be told apart at a glance. comp-diff still has **all 6** rows `contradicted` (the urgency row was `drift` before). |
+| 2 | Logo | **partial** | It is now typed "DG" initials over a celeste swoosh: a wordmark, not the comp's drawn monogram with a branching vessel. The logo-mark region is still `contradicted`. |
+| 3 | Mobile route lines and illustration | **resolved** | Each row now ends in a celeste stub, with the last one red. Hiding the woman now has a reason: it keeps the urgency row visible (PRODUCT principle 3). Accepted as an adaptation. |
+| 4 | Urgency row at 390×844 | **resolved** | The red row sits fully above the bottom bar in `mobile.png`. |
+| 5 | Kicker | **resolved** | The door plate starts at "Dr. David García". |
+| 6 | Text sizes | **resolved** | Mobile body and footer text are visibly larger. No sub-18px body text is left on the home page. |
+| 7 | Condition template | **partial** | Mobile: the booking card sits in the first screen and the totem-style list renders correctly. **Desktop is broken** (regression R1). |
+| 8 | Build state | **partial** | The quoted user words ("Sí, así está bien") only accept Barlow Semi Condensed. They do not cover the logo, the pictograms or the floor line, which are still `contradicted`. The hero phase is still open at 0.745, down from 0.806. |
+| Content | Estás aquí; "hinchada o fría"; MIR line; lowercase; n.º; "con frecuencia" | **resolved** | All visible in the recaptures. One leftover: the placeholder is still "[Nº de colegiado]"; change it to "[n.º de colegiado]". |
+
+**Regressions from this fix batch**
+
+- **R1 (severe). Desktop condition pages** (`desktop-pelvica.png`): the new `nav.totem.totem-lista` picks up the hero rule `@media (min-width:1100px){.totem{position:absolute;left:53.8%;top:2.5%;width:25.8%;bottom:1.2%}}`. It floats over the top of the page, covering the H1 "Congestión venosa pélvica", the intro and the booking card, and leaves an empty white band where the "Otras consultas" section was.
+  - Fix in `static/estilos.css`: scope the hero rule to `.hero .totem` (or `.hero-grid .totem`). Alternatively, add `.totem-lista{position:relative;left:auto;top:auto;bottom:auto;width:auto}` after the ≥1100px block.
+  - This affects every condition page that uses `totem_lista` (build.py:423).
+- **R2. Hero row 5 wraps badly on desktop.** The wider icons leave "carótida" alone on its own line ("Aorta dilatada, placas en la / carótida"). The floor-line region went from `drift` to `contradicted`.
+  - Fix: add `text-wrap:balance` to `.fila-d`, or shorten the text to "Aorta dilatada o placas en carótida".
+  - Re-run the hero comp-diff after the change.
+
+## remaining
+
+- Check 0: retake `mobile.png` so the body map is visibly rendered. If it is blank in a viewport capture too, it is a real bug in `.mapa-fig img` at ≤720px and must be fixed.
+- R1: the desktop totem-lista overlay on condition pages. This blocks shipping.
+- Fix 1: redraw the leg (row 1) or the foot (row 4) so the two differ at a glance. For example, the leg shows the full calf with varicose marks and the foot shows a side-view foot with sole and toes.
+- Fix 2: the logo is still typed initials; it needs a drawn DG monogram with a vessel (or David's real mark).
+- R2: the orphan word in row 5.
+- Fix 8: close or re-gate the hero phase, or get the user's explicit acceptance of the logo and pictograms as they are.
+
+disposition: recapture

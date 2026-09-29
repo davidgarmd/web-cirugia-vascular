@@ -19,7 +19,7 @@ CONFIG = {
     "titulo": "Cirujano vascular y endovascular",
     "especialidad": "Angiología y Cirugía Vascular",
     "eslogan": "Cirugía vascular, ciencia y preguntas incómodas: medicina bien contada",
-    "colegiado": "[Nº de colegiado]",
+    "colegiado": "[n.º de colegiado]",
     "registro_sanitario": "[Nº de inscripción en el Registro de Centros Sanitarios de Castilla-La Mancha]",
     "telefono": "[Teléfono]",            # formato visible, ej.: "926 00 00 00"
     "telefono_enlace": "+34000000000",   # formato tel: internacional sin espacios
@@ -527,7 +527,7 @@ TOTEM = [
     ("Dolor pélvico o varices vulvares", "Congestión pélvica", "congestion-venosa-pelvica", "pelvis", False),
     ("Me duele al caminar", "Mala circulación", "enfermedad-arterial-periferica", "caminar", False),
     ("Una herida en el pie que no cura", "Pie diabético", "pie-diabetico-ciudad-real", "pie", False),
-    ("Me han encontrado algo en una prueba", "Aorta dilatada, placas en la carótida", "aneurisma-aorta-abdominal", "informe", False),
+    ("Me han encontrado algo en una prueba", "Aorta dilatada o placas en carótida", "aneurisma-aorta-abdominal", "informe", False),
     ("Pierna hinchada o fría de golpe", "Urgencias", "trombosis-venosa-profunda", "alarma", True),
 ]
 

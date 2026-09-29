@@ -108,7 +108,7 @@ ul,ol{padding-left:1.2em}
 .fila{flex:1;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(8px,.8vw,14px);padding:.45em .2em;color:#fff;text-decoration:none;border-radius:8px;
   transition:background-color 150ms ease}
 .fila-ico{width:clamp(40px,3.9vw,60px);height:clamp(40px,3.9vw,60px);stroke-width:1.6}
-.fila-txt{display:flex;flex-direction:column;gap:.15em}
+.fila-txt{display:flex;flex-direction:column;gap:.15em;text-wrap:balance}
 .fila-t{font:700 clamp(1.15rem,1.8vw,1.75rem)/1.04 var(--senal);letter-spacing:-.005em}
 .fila-d{font:600 clamp(.95rem,1.1vw,1.1rem)/1.15 var(--senal);color:#D6E6FA}
 .fila-flecha{width:clamp(24px,2.3vw,36px);height:clamp(24px,2.3vw,36px);stroke-width:2.4;transition:transform 160ms var(--ease-out)}
@@ -143,7 +143,7 @@ ul,ol{padding-left:1.2em}
   .hero-sub{margin-top:clamp(10px,1vw,18px);max-width:36ch;font-size:clamp(1.15rem,1.65vw,1.6rem)}
   .acciones-hero{margin:clamp(12px,1.1vw,20px) 0 0}
   .hero-mujer{position:absolute;left:14.7%;bottom:3.6%;width:13%;height:auto;z-index:2}
-  .totem{position:absolute;left:53.8%;top:2.5%;width:25.8%;bottom:1.2%}
+  .hero .totem{position:absolute;left:53.8%;top:2.5%;width:25.8%;bottom:1.2%}
   .rutas{left:0;top:0;width:100%;height:100%}
   .suelo{position:absolute;left:0;bottom:2.4%;width:57%}
 }
