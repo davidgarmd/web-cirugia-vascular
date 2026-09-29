@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T19:06:52+00:00",
+  "title": "Design System: Dr. David García · Cirugía Vascular",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Corridor Sign Navy",
+        "canonical": "oklch(28.8% 0.116 263.6)",
+        "tonalRamp": [
+          "#00062A",
+          "#0D214D",
+          "#243D73",
+          "#3D5B9B",
+          "#5E7FC2",
+          "#85A4E3",
+          "#AECBFF",
+          "#D5EFFF"
+        ]
+      },
+      "navy-hover": {
+        "role": "primary",
+        "displayName": "Lit Sign Navy",
+        "canonical": "oklch(35.3% 0.144 264.1)",
+        "tonalRamp": [
+          "#000331",
+          "#081E56",
+          "#1E3A7F",
+          "#3559A9",
+          "#567DD2",
+          "#7EA3F1",
+          "#A7CAFF",
+          "#CFEFFF"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Plinth Navy",
+        "canonical": "oklch(23.8% 0.093 263.4)",
+        "tonalRamp": [
+          "#010824",
+          "#122245",
+          "#2A3E69",
+          "#435C8F",
+          "#6480B6",
+          "#8BA5D7",
+          "#B3CBF8",
+          "#DAEFFF"
+        ]
+      },
+      "light-blue": {
+        "role": "secondary",
+        "displayName": "Route Line Blue",
+        "canonical": "oklch(79.3% 0.118 222.6)",
+        "tonalRamp": [
+          "#000F21",
+          "#002B42",
+          "#004965",
+          "#006A8A",
+          "#008EB0",
+          "#54B2D2",
+          "#89D8F4",
+          "#B7FBFF"
+        ]
+      },
+      "light-blue-hover": {
+        "role": "secondary",
+        "displayName": "Route Line Blue, lit",
+        "canonical": "oklch(83.5% 0.099 220.8)",
+        "tonalRamp": [
+          "#000F1D",
+          "#002B3C",
+          "#00495E",
+          "#006982",
+          "#2F8DA8",
+          "#65B1C9",
+          "#95D6EC",
+          "#C0F9FF"
+        ]
+      },
+      "light-blue-ink": {
+        "role": "secondary",
+        "displayName": "Legible Route Blue",
+        "canonical": "oklch(50.7% 0.102 233.6)",
+        "tonalRamp": [
+          "#000D22",
+          "#002842",
+          "#004665",
+          "#0F668B",
+          "#3B8AB1",
+          "#6BAED2",
+          "#9AD3F4",
+          "#C4F7FF"
+        ]
+      },
+      "light-blue-veil": {
+        "role": "secondary",
+        "displayName": "Route Veil",
+        "canonical": "oklch(96.3% 0.019 222.2)",
+        "tonalRamp": [
+          "#030D11",
+          "#1A262B",
+          "#354247",
+          "#536065",
+          "#758388",
+          "#99A8AD",
+          "#BECED3",
+          "#E2F2F8"
+        ]
+      },
+      "urgent-red": {
+        "role": "tertiary",
+        "displayName": "Urgency Red",
+        "canonical": "oklch(65.3% 0.183 23.7)",
+        "tonalRamp": [
+          "#2D0000",
+          "#540000",
+          "#7E0011",
+          "#A92029",
+          "#D5494A",
+          "#F77974",
+          "#FFA6A0",
+          "#FFCFC9"
+        ]
+      },
+      "urgent-red-hover": {
+        "role": "tertiary",
+        "displayName": "Urgency Red, pressed",
+        "canonical": "oklch(61.0% 0.185 24.4)",
+        "tonalRamp": [
+          "#2D0000",
+          "#540000",
+          "#7E000F",
+          "#AA1F27",
+          "#D54948",
+          "#F77873",
+          "#FFA69E",
+          "#FFCFC7"
+        ]
+      },
+      "urgent-red-ink": {
+        "role": "tertiary",
+        "displayName": "Urgency Ink",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#2C0000",
+          "#530000",
+          "#7C0304",
+          "#A7261E",
+          "#D24E41",
+          "#F47C6C",
+          "#FFA899",
+          "#FFD1C3"
+        ]
+      },
+      "urgent-red-veil": {
+        "role": "tertiary",
+        "displayName": "Urgency Veil",
+        "canonical": "oklch(95.8% 0.017 21.8)",
+        "tonalRamp": [
+          "#120808",
+          "#2C2120",
+          "#493C3C",
+          "#675A59",
+          "#8A7C7B",
+          "#AFA1A0",
+          "#D6C6C5",
+          "#FAEAE9"
+        ]
+      },
+      "whatsapp-green": {
+        "role": "tertiary",
+        "displayName": "WhatsApp Green",
+        "canonical": "oklch(51.2% 0.122 153.0)",
+        "tonalRamp": [
+          "#001300",
+          "#002F0B",
+          "#004E23",
+          "#156F3D",
+          "#3F945E",
+          "#6FB885",
+          "#9DDCAF",
+          "#C7FFD6"
+        ],
+        "note": "Brand green #27AE60 deepened in the build so white text passes WCAG AA."
+      },
+      "whatsapp-green-hover": {
+        "role": "tertiary",
+        "displayName": "WhatsApp Green, pressed",
+        "canonical": "oklch(45.1% 0.109 152.4)",
+        "tonalRamp": [
+          "#001200",
+          "#002E0F",
+          "#094D27",
+          "#266E40",
+          "#4B9261",
+          "#77B689",
+          "#A3DAB1",
+          "#CCFDD8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Sign Ink",
+        "canonical": "oklch(26.1% 0.079 269.2)",
+        "tonalRamp": [
+          "#040920",
+          "#192240",
+          "#313E63",
+          "#4D5C88",
+          "#6E7EAE",
+          "#93A3D0",
+          "#BBCAF2",
+          "#E0EEFF"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(44.2% 0.070 273.0)",
+        "tonalRamp": [
+          "#06091E",
+          "#1C223D",
+          "#353D5F",
+          "#515B83",
+          "#737EA9",
+          "#98A3CB",
+          "#BFC9ED",
+          "#E4EDFF"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(89.8% 0.013 271.3)",
+        "tonalRamp": [
+          "#090B11",
+          "#22242A",
+          "#3D3F47",
+          "#5B5D65",
+          "#7D8088",
+          "#A1A4AD",
+          "#C7CAD3",
+          "#EBEEF7"
+        ]
+      },
+      "floor": {
+        "role": "neutral",
+        "displayName": "Corridor Floor",
+        "canonical": "oklch(97.1% 0.002 165.1)",
+        "tonalRamp": [
+          "#0A0B0B",
+          "#232424",
+          "#3F403F",
+          "#5C5E5D",
+          "#7F8180",
+          "#A3A5A4",
+          "#C9CBCA",
+          "#EDEFEE"
+        ]
+      },
+      "wall": {
+        "role": "neutral",
+        "displayName": "Wall White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home H1 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s; white inside navy panels."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3s, FAQ questions, box titles."
+      },
+      "sign": {
+        "displayName": "Sign",
+        "purpose": "Buttons, nav links, plaque titles, mobile bar: lettering painted on a sign."
+      },
+      "sign-row": {
+        "displayName": "Sign Row",
+        "purpose": "First line of a directory row: what the visitor feels."
+      },
+      "sign-sub": {
+        "displayName": "Sign Sub",
+        "purpose": "Second line of a directory row: where it leads."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text; 18px floor."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero subline and doctor lead, in navy."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mounted-sign",
+        "value": "0 2px 4px rgba(16,20,32,.08), 0 12px 28px -12px rgba(16,20,32,.3)",
+        "purpose": "Totem, door plaque, floor plan, appointment box, mobile menu."
+      },
+      {
+        "name": "hanging-sign",
+        "value": "0 14px 24px -14px rgba(16,20,32,.45)",
+        "purpose": "The corridor navigation sign only."
+      },
+      {
+        "name": "hairline-ring",
+        "value": "0 0 0 1px #DADDE6",
+        "purpose": "Edge for light panels without lift."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.23,1,.32,1)",
+        "purpose": "Press scale, arrow nudge, menu reveal, FAQ chevron (160-200ms)."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(.97) 160ms",
+        "purpose": "Buttons on :active (plaques and rooms .98, rows .99)."
+      },
+      {
+        "name": "route-flow",
+        "value": "stroke-dashoffset 0 to -60, 1.6s linear infinite (0.7s on the focused route)",
+        "purpose": "White flow dash inside route tubes."
+      },
+      {
+        "name": "floor-flow",
+        "value": "background-position 0 to 52px, 2.4s linear infinite",
+        "purpose": "Dashed flow along the floor line."
+      },
+      {
+        "name": "route-focus",
+        "value": "opacity .28 on other routes, 150ms",
+        "purpose": "Hover or focus on a totem row isolates its route."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "All flows and transitions stop under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "scene",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Call Button",
+      "kind": "button",
+      "refersTo": "button-call",
+      "description": "Primary action: call the practice.",
+      "html": "<a class=\"ds-btn ds-btn-navy\" href=\"#\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2\"/></svg><span>Llamar</span></a>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-btn{display:inline-flex;align-items:center;gap:.55em;min-height:52px;padding:.7em 1.3em;border-radius:var(--r,12px);border:2px solid transparent;font:700 1.25rem/1.1 'Barlow Semi Condensed','Arial Narrow',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}.ds-btn-navy{background:var(--navy,#0A2463);color:#fff}.ds-btn-navy:hover{background:var(--navy-hover,#123285)}"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "The only green in the system.",
+      "html": "<a class=\"ds-btn ds-btn-wa\" href=\"#\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9\"/><path d=\"M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1\"/></svg><span>WhatsApp</span></a>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-btn{display:inline-flex;align-items:center;gap:.55em;min-height:52px;padding:.7em 1.3em;border-radius:var(--r,12px);border:2px solid transparent;font:700 1.25rem/1.1 'Barlow Semi Condensed','Arial Narrow',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}.ds-btn-wa{background:var(--verde-wa,#187A43);color:#fff}.ds-btn-wa:hover{background:#136636}"
+    },
+    {
+      "name": "Appointment Button",
+      "kind": "button",
+      "refersTo": "button-appointment",
+      "description": "Pedir cita: light blue with navy lettering, in the nav sign, mobile bar and closing band.",
+      "html": "<a class=\"ds-btn ds-btn-celeste\" href=\"#\">Pedir cita</a>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-btn{display:inline-flex;align-items:center;gap:.55em;min-height:52px;padding:.7em 1.3em;border-radius:var(--r,12px);border:2px solid transparent;font:700 1.25rem/1.1 'Barlow Semi Condensed','Arial Narrow',system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}.ds-btn-celeste{background:var(--celeste,#56CCF2);color:var(--navy,#0A2463)}.ds-btn-celeste:hover{background:#7AD8F6}"
+    },
+    {
+      "name": "Corridor Sign",
+      "kind": "nav",
+      "refersTo": "corridor-sign",
+      "description": "Hanging navy navigation sign with two metal hangers.",
+      "html": "<div class=\"ds-cartel-wrap\"><nav class=\"ds-cartel\"><a class=\"ds-marca\" href=\"#\">Dr. David García <span class=\"ds-sep\">·</span> Cirugía Vascular</a><a class=\"ds-nav-a\" aria-current=\"page\" href=\"#\">Tratamientos</a><a class=\"ds-nav-a\" href=\"#\">El doctor</a><a class=\"ds-nav-cita\" href=\"#\">Pedir cita</a></nav></div>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-cartel-wrap{position:relative;padding:30px 20px 0}.ds-cartel-wrap::before,.ds-cartel-wrap::after{content:'';position:absolute;top:0;width:10px;height:30px;border-radius:3px;background:linear-gradient(90deg,#8a93a8,#c9cfdb 45%,#8a93a8)}.ds-cartel-wrap::before{left:12%}.ds-cartel-wrap::after{right:12%}.ds-cartel{display:flex;align-items:center;gap:22px;min-height:72px;padding:0 14px 0 26px;background:var(--navy,#0A2463);border-radius:var(--r,12px);box-shadow:0 14px 24px -14px rgba(16,20,32,.45)}.ds-marca,.ds-nav-a{color:#fff;text-decoration:none;font:700 1.25rem/1.1 'Barlow Semi Condensed','Arial Narrow',system-ui,sans-serif;}.ds-marca{margin-right:auto}.ds-sep{color:var(--celeste,#56CCF2)}.ds-nav-a{padding:.4em 0}.ds-nav-a:hover{color:var(--celeste,#56CCF2)}.ds-nav-a[aria-current]{box-shadow:inset 0 -3px 0 var(--celeste,#56CCF2)}.ds-nav-a:focus-visible,.ds-nav-cita:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}.ds-nav-cita{background:var(--celeste,#56CCF2);color:var(--navy,#0A2463);border-radius:var(--r,12px);padding:.5em 1em;text-decoration:none;font:700 1.25rem/1.1 'Barlow Semi Condensed','Arial Narrow',system-ui,sans-serif;}"
+    },
+    {
+      "name": "Directory Totem",
+      "kind": "custom",
+      "refersTo": "directory-row",
+      "description": "Signature: '¿Qué notas?' standing sign; symptom rows with pictogram and arrow, red urgency row last, plinth below.",
+      "html": "<nav class=\"ds-totem\"><h2>¿Qué notas?</h2><ol><li><a class=\"ds-fila\" href=\"#\"><svg width=\"44\" height=\"44\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8.5 2c-.6 3.2-1 5.6-.4 8.2.5 2.2.3 4.2-.6 6.2-.8 1.8-.3 3.6 1.5 3.6h2c1.6 0 2-1.5 1.4-3-.8-2-.7-4 .2-6.3 1-2.6 1.4-5.4 1.4-8.7\"/><path d=\"M10.3 4.5c1.2.7-.6 1.6.4 2.5s-.7 1.7.4 2.6\"/><path d=\"M9.8 12.2c.9.6-.4 1.3.3 2\"/></svg><span class=\"ds-txt\"><span class=\"ds-t\">Me pesan las piernas</span><span class=\"ds-d\">Varices</span></span><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M13 18l6 -6\"/><path d=\"M13 6l6 6\"/></svg></a></li><li><a class=\"ds-fila ds-urgente\" href=\"#\"><svg width=\"44\" height=\"44\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 9v4\"/><path d=\"M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z\"/><path d=\"M12 16h.01\"/></svg><span class=\"ds-txt\"><span class=\"ds-t\">Pierna hinchada o fría de golpe</span><span class=\"ds-d\">Urgencias</span></span><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M13 18l6 -6\"/><path d=\"M13 6l6 6\"/></svg></a></li></ol><div class=\"ds-plinto\"></div></nav>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-totem{max-width:420px;background:var(--navy,#0A2463);color:#fff;border-radius:12px 12px 4px 4px;padding:20px 14px 0;box-shadow:0 2px 4px rgba(16,20,32,.08),0 12px 28px -12px rgba(16,20,32,.3)}.ds-totem h2{font:800 2rem/1.08 Montserrat,Inter,sans-serif;letter-spacing:-.015em;margin:0 0 .3em;padding:0 .35em .35em;border-bottom:2px solid rgba(255,255,255,.85)}.ds-totem ol{list-style:none;margin:0;padding:0}.ds-totem li{border-bottom:1px solid rgba(255,255,255,.35)}.ds-totem li:last-child{border-bottom:0}.ds-fila{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:.5em .3em;color:#fff;text-decoration:none;border-radius:8px;transition:background-color 150ms ease}.ds-fila:hover{background:rgba(86,204,242,.14)}.ds-fila svg:last-child{transition:transform 160ms cubic-bezier(.23,1,.32,1)}.ds-fila:hover svg:last-child{transform:translateX(4px)}.ds-fila:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}.ds-txt{display:flex;flex-direction:column;gap:.15em}.ds-t{font:700 1.45rem/1.04 'Barlow Semi Condensed','Arial Narrow',sans-serif}.ds-d{font:600 1.05rem/1.15 'Barlow Semi Condensed','Arial Narrow',sans-serif;color:#D6E6FA}.ds-urgente{background:var(--rojo,#EB5757);border-radius:0;margin:0 -10px;padding-inline:calc(10px + .3em)}.ds-urgente .ds-d{color:#fff}.ds-urgente:hover{background:#DC4848}.ds-plinto{height:26px;margin:10px -24px 0;background:#061A4A;border-radius:4px}"
+    },
+    {
+      "name": "Route Line",
+      "kind": "custom",
+      "refersTo": "light-blue",
+      "description": "Open vessel with flow: 14px light blue tube, round caps, moving white dash. Red only for the urgency route.",
+      "html": "<svg class=\"ds-rutas\" viewBox=\"0 0 320 120\" width=\"320\" height=\"120\" aria-hidden=\"true\"><g class=\"ds-ruta\"><path class=\"ds-tubo\" d=\"M10 30H190Q224 30 224 64V120\"/><path class=\"ds-flujo\" d=\"M10 30H190Q224 30 224 64V120\"/></g><g class=\"ds-ruta ds-ruta-urgente\"><path class=\"ds-tubo\" d=\"M10 90H130\"/><path class=\"ds-flujo\" d=\"M10 90H130\"/></g></svg>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-rutas{overflow:visible}.ds-tubo,.ds-flujo{fill:none;stroke-linecap:round;stroke-linejoin:round}.ds-tubo{stroke:var(--celeste,#56CCF2);stroke-width:14}.ds-ruta-urgente .ds-tubo{stroke:var(--rojo,#EB5757)}.ds-flujo{stroke:#fff;stroke-width:3;stroke-dasharray:14 16;animation:ds-flujo 1.6s linear infinite}.ds-rutas:hover .ds-flujo{animation-duration:.7s}@keyframes ds-flujo{to{stroke-dashoffset:-60}}@media (prefers-reduced-motion:reduce){.ds-flujo{animation:none}}"
+    },
+    {
+      "name": "Plaque",
+      "kind": "card",
+      "refersTo": "plaque",
+      "description": "Navy door plaque linking a related condition.",
+      "html": "<a class=\"ds-placa\" href=\"#\"><svg width=\"44\" height=\"44\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8.5 2c-.6 3.2-1 5.6-.4 8.2.5 2.2.3 4.2-.6 6.2-.8 1.8-.3 3.6 1.5 3.6h2c1.6 0 2-1.5 1.4-3-.8-2-.7-4 .2-6.3 1-2.6 1.4-5.4 1.4-8.7\"/><path d=\"M10.3 4.5c1.2.7-.6 1.6.4 2.5s-.7 1.7.4 2.6\"/><path d=\"M9.8 12.2c.9.6-.4 1.3.3 2\"/></svg><span class=\"ds-pt\">Varices</span><span class=\"ds-pr\">Piernas pesadas, venas visibles, hinchazón al final del día.</span></a>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-placa{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;max-width:360px;background:var(--navy,#0A2463);color:#fff;border-radius:var(--r,12px);padding:1.1rem 1.2rem;text-decoration:none;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 150ms ease}.ds-placa svg{grid-row:1/3;width:40px;height:40px;color:var(--celeste,#56CCF2)}.ds-pt{font:700 1.35rem 'Barlow Semi Condensed','Arial Narrow',sans-serif}.ds-pr{font:400 .93rem/1.35 Inter,system-ui,sans-serif;color:#C9D6F2}.ds-placa:hover{background:var(--navy-hover,#123285)}.ds-placa:active{transform:scale(.98)}.ds-placa:focus-visible{outline:3px solid var(--celeste,#56CCF2);outline-offset:3px}"
+    },
+    {
+      "name": "Urgency Panel",
+      "kind": "card",
+      "refersTo": "urgent-panel",
+      "description": "'Esto es de urgencias': red header on Urgency Veil; the only red panel.",
+      "html": "<div class=\"ds-aviso\"><h3>Esto es de urgencias</h3><p>Pierna hinchada, dolorosa o fría de golpe: ve hoy a urgencias.</p></div>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-aviso{max-width:420px;border-radius:var(--r,12px);overflow:hidden;background:#FDEDEC;box-shadow:0 0 0 1px #F5C2BF}.ds-aviso h3{margin:0;padding:.9rem 1.2rem;background:var(--rojo,#EB5757);color:#fff;font:800 1.1rem/1.25 Montserrat,Inter,sans-serif}.ds-aviso p{margin:0;padding:1rem 1.2rem;color:#B3261E;font:400 1.125rem/1.65 Inter,system-ui,sans-serif}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "52px field, navy focus stroke plus light blue ring.",
+      "html": "<label class=\"ds-field\"><span>Teléfono</span><input type=\"tel\" placeholder=\"600 000 000\"></label>",
+      "css": ":host{--navy:#0A2463;--navy-hover:#123285;--celeste:#56CCF2;--rojo:#EB5757;--verde-wa:#187A43;--r:12px;}.ds-field{display:grid;gap:.45rem;max-width:360px;font:600 1.125rem Inter,system-ui,sans-serif;color:#15204A}.ds-field input{font:400 1.125rem Inter,system-ui,sans-serif;min-height:52px;padding:.7rem 1rem;border:1.5px solid #9AA3BD;border-radius:10px;background:#fff;color:#15204A}.ds-field input:focus-visible{border-color:var(--navy,#0A2463);outline:3px solid var(--celeste,#56CCF2);outline-offset:1px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wayfinding Corridor",
+    "overview": "The site is a hospital corridor, not a clinic brochure. The page ground is the corridor floor (a cool off-white), navy panels are the signs that hang from the ceiling and stand on plinths, and light blue route lines run along the floor from each sign to its destination. A visitor who arrives worried reads the directory the way they would in the Hospital General: they find the line that says what they feel, see at once whether it is \"pide cita\" or \"urgencias\", and follow it. The route lines are drawn as open vessels with flow inside them, which is where the vascular subject and the wayfinding world meet.\n\nDensity is low and sizes are generous, because the reader is often 60 or older and on a phone: body text never drops below 18px, touch targets hold 44px and most hold 52px. Authority comes from order and plainness: clear signs, one radius, one set of line icons, colours that mean one thing each. Illustration is limited to the brand's warm flat editorial style (a patient following the floor line); no stock doctor photography, no teal clinic hero, no grid of white service cards.\n\nThe direction contract predates the approved comp (comp D2, hybrid). Where they differ, the build is recorded here: navigation is a hanging corridor sign rather than a plain header, the directory totem carries six symptom rows rather than five, sign lettering is Barlow Semi Condensed rather than Montserrat, the single radius is 12px rather than 10px, and the route tube is 14px rather than 12px.",
+    "keyCharacteristics": [
+      "Navy sign panels on a pale corridor floor; light blue route lines with a moving white flow dash.",
+      "Three typefaces with strict jobs: Montserrat 800 headings, Barlow Semi Condensed sign lettering, Inter for reading.",
+      "Semantic colour is absolute: red is urgency, green is WhatsApp (and healthy-habit checks), nothing else.",
+      "One radius (12px) for every panel, button and plaque.",
+      "Tabler line icons plus three authored pictograms (varicose leg, uterus and ovaries, foot with wound) in the same 2px round stroke.",
+      "Large type and targets for older readers; motion is ambient and stops under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Red Means Urgencias Rule",
+        "body": "Urgency Red appears only on the one route that means \"go to A&E today\". No red for errors styling, sale badges, emphasis or decoration. If a screen has red on it, the visitor must be able to say which symptom sends them to urgencias.",
+        "section": "colors"
+      },
+      {
+        "name": "The Green Is WhatsApp Rule",
+        "body": "Green is the WhatsApp action and the healthy-habit tick, nothing else. Success states, \"available\" dots and generic confirmations do not borrow it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signs Are Navy Rule",
+        "body": "Anything the visitor navigates by (directory, plaque, door sign, floor plan, nav) is a navy panel with white lettering. Short sign-like messages (the take-away box, the closing call band, the doctor's door plaque) may also sit on navy; articles, lists and FAQ answers sit on floor or wall.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sign Lettering Rule",
+        "body": "If it would be painted on a hospital sign (a destination, an action, a room), set it in Barlow Semi Condensed 700. If it is a heading, Montserrat 800. If it is to be read, Inter. Never mix jobs.",
+        "section": "typography"
+      },
+      {
+        "name": "The 18px Floor Rule",
+        "body": "Body text is 1.125rem (18px) minimum; secondary text may go to 0.95rem only for metadata (dates, collegiate number, legal).",
+        "section": "typography"
+      },
+      {
+        "name": "The Only Signs Lift Rule",
+        "body": "A shadow means \"this is a physical sign\". Text blocks, lists and links stay flat on the floor.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Radius Rule",
+        "body": "12px, everywhere a corner is rounded. If a new component wants another radius, it is not yet a sign.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Open Vessel Rule",
+        "body": "A route line is always a tube with flow inside it, never a flat stroke or dotted guide: tube colour plus a moving white dash, round caps, and it must end at a destination.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** send every navigation choice through a sign: a navy panel with white sign lettering, a line icon and an arrow.",
+      "**Do** draw every route as an open vessel: 14px tube, round caps, moving white dash, ending at its destination.",
+      "**Do** keep body text at 18px or more and every tap target at 44px or more (52px for buttons).",
+      "**Do** use 12px for every rounded corner.",
+      "**Do** pair every destination with a Tabler line icon or one of the authored pictograms, all in the same 2px round stroke.",
+      "**Do** stop the flow animations and transitions under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "**Don't** use Urgency Red for anything but the route to urgencias.",
+      "**Don't** use green for anything but WhatsApp and healthy-habit ticks.",
+      "**Don't** build page structure from grids of white shadowed service cards; destinations are directory rows, plaques or rooms.",
+      "**Don't** use stock photos of doctors, surgery, wounds or clinics; illustration stays in the brand's flat editorial style.",
+      "**Don't** set long-form reading (articles, FAQ answers, lists of more than a few lines) on navy.",
+      "**Don't** set sign lettering in Inter or body text in Barlow."
+    ]
+  }
+}
