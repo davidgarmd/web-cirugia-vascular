@@ -1,0 +1,15 @@
+# Buscadores y asistentes de IA pueden rastrear toda la web.
+User-agent: *
+Allow: /
+
+# Rastreadores de búsqueda con IA (citan la web en sus respuestas)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.cirujanovascularciudadreal.es/sitemap.xml
