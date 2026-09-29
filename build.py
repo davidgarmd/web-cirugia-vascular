@@ -58,10 +58,13 @@ def fecha_es(iso):
 # ---------------------------------------------------------------------------
 ICONOS = json.loads((RAIZ / "iconos.json").read_text(encoding="utf-8"))
 ICONOS.update({
-    # pierna con vena dilatada
-    "vena": '<path d="M9 3v8c0 2.5-1 4.5-1 7v1.5a1.5 1.5 0 0 0 1.5 1.5h6a1 1 0 0 0 .4-1.9l-2.9-1.3v-6.8c0-2.4 1-4.5 1-8" /><path d="M11.6 6c1.2 1-1 2 .2 3.2s-1 2 .2 3.3" />',
-    # pelvis con las venas laterales
-    "pelvis": '<path d="M4 6c.5 6 3.6 10 8 10s7.5-4 8-10" /><path d="M9 16l-1 5" /><path d="M15 16l1 5" /><path d="M9.5 9.5a2.5 2.5 0 0 0 5 0" /><path d="M6.5 9c1 .6 1 1.6 2 2" /><path d="M17.5 9c-1 .6-1 1.6-2 2" />',
+    # pictogramas propios, mismo trazo que Tabler
+    # pierna con varices
+    "vena": '<path d="M8 2v9c0 3-1.5 5-1.5 7.5v1a1.5 1.5 0 0 0 1.5 1.5h7.6a1 1 0 0 0 .4-1.9L13 17.6V11c0-3 1-6 1-9" /><path d="M10.4 5.2c1.1.8-.7 1.7.3 2.6s-.8 1.8.3 2.7-.6 1.7.3 2.7" />',
+    # útero y ovarios
+    "pelvis": '<path d="M9 8.5h6c0 3.5-1.2 5.9-2.2 6.9V20h-1.6v-4.6C10.2 14.4 9 12 9 8.5z" /><path d="M9 9.2C7.6 8 6 7.8 5 9" /><path d="M15 9.2c1.4-1.2 3-1.4 4-.2" /><circle cx="4.6" cy="11" r="1.6" /><circle cx="19.4" cy="11" r="1.6" />',
+    # pie con herida
+    "pie": '<path d="M7 2v10.5c0 2-1.8 3.2-1.8 5.4A3 3 0 0 0 8.2 21h10.4a1.7 1.7 0 0 0 .6-3.3l-4.8-1.9c-1.4-.6-2.1-1.7-2.1-3.2V2" /><path d="M15.2 18.6h.01" /><path d="M9 18.2l1.2-1.2" />',
 })
 
 
@@ -78,10 +81,10 @@ ICONO_SERV = {
     "eco-doppler-ciudad-real": "eco",
 }
 
-LOGO = ('<svg class="logo-marca" viewBox="0 0 48 48" aria-hidden="true">'
-        '<rect x="1.5" y="1.5" width="45" height="45" rx="10" fill="none" stroke="#fff" stroke-width="2.5"/>'
-        '<path d="M8 38c7-2 9-12 16-14s9-10 16-12" fill="none" stroke="#56CCF2" stroke-width="5" stroke-linecap="round"/>'
-        '<path d="M8 38c7-2 9-12 16-14s9-10 16-12" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="2.5 5" stroke-linecap="round"/>'
+LOGO = ('<svg class="logo-marca" viewBox="0 0 56 48" aria-hidden="true">'
+        '<path d="M4 42c9-1 12-6 20-6s14-4 28-5" fill="none" stroke="#56CCF2" stroke-width="4" stroke-linecap="round"/>'
+        ''
+        '<text x="29" y="24" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="21" fill="#fff" letter-spacing="-1">DG</text>'
         '</svg>')
 
 
@@ -125,7 +128,7 @@ def pie():
   <div class="contenedor pie-grid">
     <div class="pie-marca">
       <p class="pie-nombre">{e(C['nombre'])}</p>
-      <p>{e(C['titulo'])}<br>Especialista en {e(C['especialidad'])}<br>Nº de colegiado {e(C['colegiado'])}</p>
+      <p>{e(C['titulo'])}<br>Especialista en {e(C['especialidad'])}<br>n.º de colegiado {e(C['colegiado'])}</p>
     </div>
     <div>
       <h2 class="pie-t">Consulta</h2>
@@ -304,7 +307,7 @@ def mapa_html():
       <ul class="leyenda" aria-label="Leyenda"><li class="ley-arteria">Arterias</li><li class="ley-vena">Venas</li></ul>
     </div>
     <figure class="mapa-fig">
-      <img src="/img/mapa-vascular.webp" width="700" height="1050" alt="Dibujo del cuerpo de cuello a pies con las arterias principales en azul marino y las venas en celeste" loading="lazy" decoding="async">
+      <img src="/img/mapa-vascular.webp" width="700" height="1050" alt="Dibujo del cuerpo de cuello a pies con las arterias principales en azul marino y las venas en celeste" decoding="async">
       <ol class="mapa-notas">{notas}</ol>
     </figure>
   </div>
@@ -345,15 +348,14 @@ def pag_inicio():
 <section class="doctor" aria-labelledby="doctor-t">
   <div class="contenedor doctor-grid">
     <div class="placa-puerta">
-      <p class="pp-consulta">Consulta</p>
       <h2 id="doctor-t">{e(C['nombre'])}</h2>
-      <p class="pp-esp">Angiología y Cirugía Vascular y Endovascular</p>
-      <p class="pp-col">Nº col. {e(C['colegiado'])}</p>
+      <p class="pp-esp">Angiología y Cirugía Vascular</p>
+      <p class="pp-col">Cirujano vascular y endovascular · n.º col. {e(C['colegiado'])}</p>
     </div>
     <div class="doctor-texto">
       <p class="doctor-lead">El mismo cirujano vascular del {e(C['hospital'])}, también en consulta privada.</p>
       <ul class="doctor-puntos">
-        <li><strong>Especialista vía MIR</strong> en Angiología y Cirugía Vascular y Endovascular: técnicas mínimamente invasivas y cirugía compleja.</li>
+        <li><strong>Especialista vía MIR en Angiología y Cirugía Vascular</strong>, con formación endovascular: técnicas mínimamente invasivas y cirugía compleja.</li>
         <li><strong>Centrado en la insuficiencia venosa crónica</strong> y la congestión venosa pélvica.</li>
         <li><strong>Diagnóstico en una visita</strong>, con el eco-doppler hecho por él mismo.</li>
         <li><strong>Te lo explica claro</strong>: divulga salud vascular como <a href="https://www.instagram.com/davidgarmd/" rel="noopener">@davidgarmd</a>.</li>
@@ -401,13 +403,24 @@ def pag_inicio():
 def cabecera_puerta(s, m_html):
     return f"""<div class="entrada"><div class="contenedor">
   {m_html}
-  <div class="puerta">
-    <span class="puerta-ico">{icono(ICONO_SERV[s['slug']])}</span>
-    <h1>{e(s['h1'])}</h1>
+  <div class="entrada-grid">
+    <div>
+      <div class="puerta">
+        <span class="puerta-ico">{icono(ICONO_SERV[s['slug']])}</span>
+        <h1>{e(s['h1'])}</h1>
+      </div>
+      <p class="escena">{e(s['escena'])}</p>
+    </div>
+    <div class="caja-cita"><h2 class="caja-t">Pide cita en {e(C['ciudad'])}</h2><p>Eco-doppler en la misma visita. Sin volante.</p>{botones("acciones-col")}<p class="caja-h">{icono("reloj", "ico ico-sm")}{e(C['horario_texto'])}</p></div>
   </div>
-  <p class="escena">{e(s['escena'])}</p>
-  {botones()}
 </div></div>"""
+
+
+def directorio(slugs, titulo):
+    filas = "".join(
+        f'<li><a class="fila" href="/{x}/">{icono(ICONO_SERV[x], "ico fila-ico")}<span class="fila-txt"><span class="fila-t">{e(SERV[x]["menu"])}</span>'
+        f'<span class="fila-d">{e(SERV[x]["resumen"])}</span></span>{icono("flecha", "ico fila-flecha")}</a></li>' for x in slugs)
+    return f'<nav class="totem totem-lista" aria-labelledby="dir-t"><h2 id="dir-t">{e(titulo)}</h2><ol class="totem-filas">{filas}</ol></nav>'
 
 
 def pag_servicio(s):
@@ -426,7 +439,7 @@ def pag_servicio(s):
         consultar += f'<div class="aviso-panel aviso-urgente"><h3>{icono("alarma")}Esto es de urgencias</h3><p>{e(s["urgencia"])}</p></div>'
     consultar += "</div></section>"
     indice += '<li><a href="#cuando">Cuándo consultar</a></li><li><a href="#faq">Preguntas frecuentes</a></li>'
-    relacionados = "".join(placa(SERV[r]) for r in s["relacionados"])
+    relacionados = directorio(s["relacionados"], "Otras consultas en esta planta")
     cuerpo = f"""{cabecera_puerta(s, m_html)}
 <div class="contenedor pag-grid">
   <article class="articulo">
@@ -439,11 +452,10 @@ def pag_servicio(s):
     <p class="revisado">Revisado por <a href="/sobre-mi/">{e(C['nombre'])}</a>, {e(C['titulo']).lower()}. Última revisión: <time datetime="{C['fecha_revision']}">{fecha_es(C['fecha_revision'])}</time>. Información educativa: no sustituye la valoración de un médico.</p>
   </article>
   <aside class="lateral">
-    <div class="caja-cita"><h2 class="caja-t">Pide cita en {e(C['ciudad'])}</h2><p>Eco-doppler en la misma visita. Sin volante.</p>{botones("acciones-col")}<p class="caja-h">{icono("reloj", "ico ico-sm")}{e(C['horario_texto'])}</p></div>
     <nav class="indice" aria-label="En esta página"><h2 class="caja-t">En esta página</h2><ol>{indice}</ol></nav>
   </aside>
 </div>
-<section class="otras"><div class="contenedor"><h2>Otras consultas en esta planta</h2><div class="placas">{relacionados}</div></div></section>
+<section class="otras"><div class="contenedor">{relacionados}</div></section>
 {banda_final()}"""
     pagina = {"@type": "MedicalWebPage", "@id": f'{D}/{s["slug"]}/#pagina', "url": f'{D}/{s["slug"]}/',
               "name": s["h1"], "description": s["description"], "inLanguage": "es-ES", "isPartOf": {"@id": ID_WEB},
@@ -476,7 +488,7 @@ def pag_tratamientos():
     <div class="ala ala-arterias"><h2>Arterias</h2><ul>{arterias}</ul></div>
     <div class="plano-base">
       <a class="sala sala-urgente" href="/trombosis-venosa-profunda/" data-sala="urgente">{icono("alarma")}<span>Urgencias: pierna hinchada o fría de golpe</span></a>
-      <p class="aqui"><span class="aqui-punto" aria-hidden="true"></span>Usted está aquí</p>
+      <p class="aqui"><span class="aqui-punto" aria-hidden="true"></span>Estás aquí</p>
     </div>
     <svg class="plano-rutas" aria-hidden="true" focusable="false"></svg>
     <ul class="plano-leyenda" aria-label="Leyenda"><li class="ley-vena">Venas</li><li class="ley-arteria-b">Arterias</li><li class="ley-urgente">Urgencias</li></ul>
@@ -498,10 +510,9 @@ def pag_sobre_mi():
     cuerpo = f"""<div class="entrada"><div class="contenedor">{m_html}
   <div class="doctor-grid doctor-grid-pag">
     <div class="placa-puerta">
-      <p class="pp-consulta">Consulta</p>
       <h1>{e(C['nombre'])}, cirujano vascular en Ciudad Real</h1>
-      <p class="pp-esp">Angiología y Cirugía Vascular y Endovascular</p>
-      <p class="pp-col">Nº col. {e(C['colegiado'])}</p>
+      <p class="pp-esp">Angiología y Cirugía Vascular</p>
+      <p class="pp-col">Cirujano vascular y endovascular · n.º col. {e(C['colegiado'])}</p>
     </div>
     {foto}
   </div>

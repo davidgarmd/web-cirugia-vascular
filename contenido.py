@@ -16,7 +16,7 @@ CONFIG = {
     "marca": "David García · Cirugía Vascular",
     "nombre": "Dr. David García",
     "nombre_completo": "David García [Segundo apellido]",
-    "titulo": "Cirujano Vascular y Endovascular",
+    "titulo": "Cirujano vascular y endovascular",
     "especialidad": "Angiología y Cirugía Vascular",
     "eslogan": "Cirugía vascular, ciencia y preguntas incómodas: medicina bien contada",
     "colegiado": "[Nº de colegiado]",
@@ -125,7 +125,7 @@ SERVICIOS = [
         "resumen": "Dolor pélvico que empeora de pie, varices vulvares o varices de las piernas que vuelven.",
         "condicion": "Síndrome de congestión venosa pélvica",
         "escena": "Es un dolor sordo en la parte baja de la tripa que va a más a lo largo del día, sobre todo si pasas horas de pie, y que mejora al tumbarte. A veces molesta en las relaciones o después de ellas. Has pasado por varias consultas, las pruebas salen normales y nadie termina de darte una explicación.",
-        "respuesta": "La congestión venosa pélvica es la dilatación de las venas de la pelvis, casi siempre de la vena ovárica, porque sus válvulas no cierran y la sangre se embalsa. Produce dolor pélvico crónico que empeora de pie, varices en la vulva, el periné o la cara posterior del muslo, y varices de las piernas que reaparecen tras tratarlas. Se estudia con eco-doppler y pruebas de imagen, y se trata cerrando las venas enfermas desde dentro (embolización), sin cirugía abierta.",
+        "respuesta": "La congestión venosa pélvica es la dilatación de las venas de la pelvis, con frecuencia de la vena ovárica, porque sus válvulas no cierran y la sangre se embalsa. Produce dolor pélvico crónico que empeora de pie, varices en la vulva, el periné o la cara posterior del muslo, y varices de las piernas que reaparecen tras tratarlas. Se estudia con eco-doppler y pruebas de imagen, y se trata cerrando las venas enfermas desde dentro (embolización), sin cirugía abierta.",
         "secciones": [
             ("Qué está pasando por dentro",
              "<p>Las venas de la pelvis recogen la sangre del útero, los ovarios y la zona genital y la devuelven hacia el corazón. Igual que en las piernas, tienen válvulas que impiden que la sangre retroceda. Cuando esas válvulas fallan, sobre todo tras varios embarazos, la sangre se estanca y las venas se dilatan, como una tubería que se va dando de sí por el peso del agua que no avanza.</p>"
@@ -528,7 +528,7 @@ TOTEM = [
     ("Me duele al caminar", "Mala circulación", "enfermedad-arterial-periferica", "caminar", False),
     ("Una herida en el pie que no cura", "Pie diabético", "pie-diabetico-ciudad-real", "pie", False),
     ("Me han encontrado algo en una prueba", "Aorta dilatada, placas en la carótida", "aneurisma-aorta-abdominal", "informe", False),
-    ("Pierna hinchada de golpe", "Urgencias", "trombosis-venosa-profunda", "alarma", True),
+    ("Pierna hinchada o fría de golpe", "Urgencias", "trombosis-venosa-profunda", "alarma", True),
 ]
 
 # Anotaciones del mapa vascular: (texto, slug, tipo de vaso, posición vertical en % del dibujo)

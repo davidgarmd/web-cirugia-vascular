@@ -79,7 +79,7 @@ ul,ol{padding-left:1.2em}
   box-shadow:0 14px 24px -14px rgba(16,20,32,.45)}
 .marca{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font:700 clamp(1.2rem,1.9vw,1.8rem)/1.1 var(--senal);margin-right:auto;white-space:nowrap}
 .marca:hover{color:#fff}
-.logo-marca{width:52px;height:52px;flex:none}
+.logo-marca{width:62px;height:54px;flex:none}
 .marca-sep{color:var(--celeste)}
 .nav{display:flex;align-items:center;gap:clamp(18px,2.4vw,40px)}
 .nav ul{display:flex;gap:clamp(18px,2.4vw,40px);list-style:none;margin:0;padding:0}
@@ -107,7 +107,7 @@ ul,ol{padding-left:1.2em}
 .totem-filas li:last-child{border-bottom:0}
 .fila{flex:1;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(8px,.8vw,14px);padding:.45em .2em;color:#fff;text-decoration:none;border-radius:8px;
   transition:background-color 150ms ease}
-.fila-ico{width:clamp(32px,3vw,46px);height:clamp(32px,3vw,46px);stroke-width:1.5}
+.fila-ico{width:clamp(40px,3.9vw,60px);height:clamp(40px,3.9vw,60px);stroke-width:1.6}
 .fila-txt{display:flex;flex-direction:column;gap:.15em}
 .fila-t{font:700 clamp(1.15rem,1.8vw,1.75rem)/1.04 var(--senal);letter-spacing:-.005em}
 .fila-d{font:600 clamp(.95rem,1.1vw,1.1rem)/1.15 var(--senal);color:#D6E6FA}
@@ -192,7 +192,6 @@ ul,ol{padding-left:1.2em}
 .placa-puerta::before{left:14px}
 .placa-puerta::after{right:14px}
 .placa-puerta h2,.placa-puerta h1{color:#fff;font-size:clamp(1.8rem,3vw,2.6rem);margin:.1em 0 .35em}
-.pp-consulta{font:700 1.15rem var(--senal);color:var(--celeste);margin:0}
 .pp-esp{font:600 1.15rem/1.35 var(--texto);margin:0 0 .6em}
 .pp-col{font-size:.95rem;color:#C6D2EE;margin:0;padding-top:.8em;border-top:1px solid rgba(255,255,255,.25)}
 .doctor-lead{font:600 clamp(1.25rem,1.9vw,1.6rem)/1.35 var(--texto);color:var(--navy)}
@@ -242,9 +241,13 @@ ul,ol{padding-left:1.2em}
 
 /* ---------- Páginas interiores ---------- */
 .entrada{padding:28px 0 clamp(36px,5vw,64px)}
-.migas ol{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem;padding:0;margin:0 0 1.4rem;font-size:.95rem;color:var(--tinta-2)}
+.migas ol{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem;padding:0;margin:0 0 1.4rem;font-size:1rem;color:var(--tinta-2)}
 .migas li+li::before{content:"›";margin-right:.35rem;color:var(--celeste-tinta);font-weight:700}
 .migas a{color:var(--tinta-2)}
+.entrada-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:clamp(32px,5vw,72px);align-items:start}
+.totem-lista{max-width:760px;padding-bottom:6px}
+.totem-lista h2{font-size:clamp(1.5rem,2.4vw,2rem)}
+.totem-lista .fila-t{font-size:1.4rem}
 .puerta{display:inline-flex;align-items:center;gap:clamp(14px,2vw,24px);background:var(--navy);border-radius:var(--r);padding:clamp(18px,2.4vw,30px) clamp(20px,3vw,40px);box-shadow:var(--sombra);margin-bottom:1.6rem;max-width:100%}
 .puerta h1{color:#fff;margin:0;font-size:clamp(1.8rem,3.6vw,3rem)}
 .puerta-ico{display:grid;place-items:center;color:var(--celeste)}
@@ -284,7 +287,7 @@ ul,ol{padding-left:1.2em}
 .caja-cita{background:var(--pared);border-radius:var(--r);padding:1.4rem;box-shadow:var(--sombra)}
 .acciones-col{flex-direction:column;margin:1rem 0}
 .acciones-col .btn{width:100%}
-.caja-h{display:flex;gap:.5em;align-items:center;font-size:.92rem;color:var(--tinta-2);margin:0}
+.caja-h{display:flex;gap:.5em;align-items:center;font-size:1rem;color:var(--tinta-2);margin:0}
 .indice{padding:0 .2rem}
 .indice ol{margin:0;padding-left:1.1em;font-size:.97rem}
 .indice li{margin-bottom:.4em}
@@ -360,7 +363,7 @@ ul,ol{padding-left:1.2em}
 .formulario .btn{justify-self:start}
 
 /* ---------- Pie ---------- */
-.pie{background:var(--navy-hondo);color:#B9C5E2;padding:3.5rem 0 6rem;font-size:.97rem}
+.pie{background:var(--navy-hondo);color:#C3CEE8;padding:3.5rem 0 6rem;font-size:1.05rem}
 .pie a{color:#E3EAFA;text-decoration:none}
 .pie a:hover{text-decoration:underline;color:#fff}
 .pie-grid{display:grid;grid-template-columns:1.3fr 1.2fr 1fr .8fr;gap:2rem}
@@ -368,7 +371,7 @@ ul,ol{padding-left:1.2em}
 .pie li{margin-bottom:.4rem}
 .pie-nombre{font:800 1.3rem var(--rotulo);color:#fff}
 .pie-t{font:700 1rem var(--rotulo);color:#fff;margin-bottom:.8rem}
-.pie-legal{border-top:1px solid rgba(255,255,255,.14);margin-top:2.5rem;padding-top:1.5rem;font-size:.87rem}
+.pie-legal{border-top:1px solid rgba(255,255,255,.14);margin-top:2.5rem;padding-top:1.5rem;font-size:1rem}
 address{font-style:normal}
 .barra-movil{display:none}
 
@@ -388,7 +391,12 @@ address{font-style:normal}
   .nav ul a{padding:.95rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:1.15rem}
   .nav .btn-celeste{margin-top:14px}
   .mapa-grid,.doctor-grid,.preguntas-grid,.contacto-grid{grid-template-columns:1fr}
-  .pag-grid{grid-template-columns:1fr}
+  .pag-grid,.entrada-grid{grid-template-columns:1fr}
+  .totem{margin-right:22px}
+  .totem-lista{margin-right:0}
+  .hero .totem-filas li{position:relative}
+  .hero .totem-filas li::after{content:"";position:absolute;right:-36px;top:50%;width:34px;height:10px;margin-top:-5px;border-radius:0 5px 5px 0;background:var(--celeste)}
+  .hero .totem-filas li:last-child::after{background:var(--rojo)}
   .lateral{position:static}
   .plano{grid-template-columns:1fr 1fr}
   .ala-centro{grid-column:1/-1;grid-row:1;padding-top:0}
@@ -404,7 +412,6 @@ address{font-style:normal}
   .bm-cita{background:var(--celeste);color:var(--navy)!important}
 }
 @media (max-width:720px){
-  body{font-size:1.07rem}
   .marca{font-size:1rem;gap:10px}
   .marca-esp,.marca-sep{display:none}
   .logo-marca{width:36px;height:36px}
@@ -415,7 +422,15 @@ address{font-style:normal}
   .hero .btn{font-size:1.25rem}
   .hero-mujer{display:none}
   .totem,.suelo{grid-row:auto}
-  .hero-grid{gap:22px;padding-top:26px}
+  .hero-grid{gap:16px;padding-top:14px}
+  .acciones-hero{margin-top:14px}
+  .totem h2{font-size:1.6rem}
+  .fila{padding:.26em .2em}
+  .cartel-wrap{padding-top:14px}
+  .cartel-wrap::before,.cartel-wrap::after{height:18px}
+  .hero-sub{font-size:1.1rem}
+  .fila-d{font-size:1rem}
+  .fila-ico{width:36px;height:36px}
   .mapa-fig{grid-template-columns:1fr;justify-items:center;gap:20px}
   .mapa-fig img{width:min(220px,60vw)}
   .mapa-notas{width:100%;display:grid;gap:10px}
