@@ -20,7 +20,7 @@ Web estática optimizada para SEO local, con la identidad visual de la marca @da
 
 ## Antes de publicar
 
-1. Abre `contenido.py` y rellena todo lo que va entre `[corchetes]` en `CONFIG` (teléfono, dirección, colegiado, registro sanitario, horario, coordenadas, dominio). Completa también la formación en la página `/sobre-mi/` (en `build.py`, función `pag_sobre_mi`).
+1. Abre `contenido.py` y rellena todo lo que va entre `[corchetes]` en `CONFIG` (colegiado, registro sanitario de la clínica, dominio). Los datos de la Clínica Cardiorreal ya están puestos: confírmalos con la clínica. Horario, coordenadas, WhatsApp y correo están vacíos y no se muestran hasta que los rellenes. Completa también la formación en la página `/sobre-mi/` (en `build.py`, función `pag_sobre_mi`).
 2. Revisa que las técnicas de cada tratamiento coincidan con lo que haces de verdad en consulta.
 3. Añade tu foto como `static/img/david-garcia-cirujano-vascular.jpg` (cuadrada, mínimo 640×640).
 4. Si quieres formulario real, crea uno gratis en Formspree o similar y pon su URL en `formulario_action` (si lo dejas vacío, el formulario abre el correo del paciente).

@@ -20,22 +20,24 @@ CONFIG = {
     "especialidad": "Angiología y Cirugía Vascular",
     "eslogan": "Cirugía vascular, ciencia y preguntas incómodas: medicina bien contada",
     "colegiado": "[n.º de colegiado]",
-    "registro_sanitario": "[Nº de inscripción en el Registro de Centros Sanitarios de Castilla-La Mancha]",
-    "telefono": "[Teléfono]",            # formato visible, ej.: "926 00 00 00"
-    "telefono_enlace": "+34000000000",   # formato tel: internacional sin espacios
-    "whatsapp": "34000000000",           # sin + ni espacios, para wa.me
-    "email": "[email de la consulta]",
-    "centro": "[Nombre del centro o clínica]",
-    "calle": "[Calle y número]",
-    "cp": "[13001]",
+    # Pasa consulta en la Clínica Cardiorreal (datos públicos de la clínica; confirmar con la clínica).
+    "registro_sanitario": "[n.º de inscripción de la Clínica Cardiorreal en el Registro de Centros Sanitarios de Castilla-La Mancha]",
+    "telefono": "926 22 10 08",          # teléfono de citas de la Clínica Cardiorreal
+    "telefono_enlace": "+34926221008",
+    "whatsapp": "",                      # vacío = se ocultan los botones de WhatsApp
+    "email": "",                         # vacío = no se muestra correo
+    "centro": "Clínica Cardiorreal",
+    "centro_url": "https://cardiologosciudadreal.es/",
+    "calle": "Calle Alonso Céspedes Guzmán, 10",
+    "cp": "13005",
     "ciudad": "Ciudad Real",
     "provincia": "Ciudad Real",
     "region": "Castilla-La Mancha",
-    "lat": "38.98480",  # ajusta a la puerta de la consulta (5 decimales)
-    "lng": "-3.92740",
-    "horario_texto": "[Lunes a viernes, de 16:00 a 20:00]",
-    "horario_schema": [{"dias": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "abre": "16:00", "cierra": "20:00"}],
-    "enlace_mapa": "https://www.google.com/maps/search/?api=1&query=Cirujano+vascular+Ciudad+Real",
+    "lat": "",  # coordenadas exactas de la clínica (5 decimales). Vacío = no se publican.
+    "lng": "",
+    "horario_texto": "Cita previa por teléfono en la Clínica Cardiorreal",
+    "horario_schema": [],  # días y horas de consulta cuando estén fijados
+    "enlace_mapa": "https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Cardiorreal+Calle+Alonso+C%C3%A9spedes+Guzm%C3%A1n+10+Ciudad+Real",
     "enlace_reserva": "",  # Doctoralia / Top Doctors / agenda propia. Vacío = se oculta el botón.
     "hospital": "Hospital General Universitario de Ciudad Real",
     "hospital_url": "https://sanidad.castillalamancha.es/",
@@ -45,7 +47,7 @@ CONFIG = {
         # "TikTok": "https://www.tiktok.com/@davidgarmd",
     },
     "fecha_revision": "2026-09-29",
-    "formulario_action": "",  # URL de Formspree/Getform/etc. Vacío = el formulario abre el correo.
+    "formulario_action": "",  # URL de Formspree/Getform/etc. Vacío (y sin email) = no se muestra formulario.
 }
 
 POBLACIONES = [
@@ -480,7 +482,8 @@ SERVICIOS = [
 FAQS_HOME = [
     ("¿Qué trata un cirujano vascular?", "Las enfermedades de arterias, venas y vasos linfáticos fuera del corazón y del interior del cráneo: varices, mala circulación en las piernas, pie diabético, aneurismas, carótidas, trombosis y úlceras."),
     ("¿Es lo mismo angiólogo que cirujano vascular?", "Sí. En España es una única especialidad, Angiología y Cirugía Vascular. El mismo especialista diagnostica, pauta tratamiento médico y realiza los procedimientos por punción y las operaciones."),
-    ("¿Necesito volante para pedir cita?", "No. En la consulta privada puedes pedir cita directamente. Si tienes informes o pruebas previas, tráelos."),
+    ("¿Necesito volante para pedir cita?", "No. Puedes pedir cita directamente llamando a la Clínica Cardiorreal. Si tienes informes o pruebas previas, tráelos."),
+    ("¿Puedo ir con mi seguro médico?", "La Clínica Cardiorreal trabaja con distintas aseguradoras. Pregunta al pedir cita si la tuya incluye la consulta de cirugía vascular."),
     ("¿Atiendes a pacientes de fuera de Ciudad Real capital?", "Sí. Acuden pacientes de toda la provincia, desde Puertollano, Valdepeñas, Tomelloso, Alcázar de San Juan, Manzanares, Daimiel o Almagro, entre otras localidades."),
 ]
 

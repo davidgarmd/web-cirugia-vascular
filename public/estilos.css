@@ -287,7 +287,7 @@ ul,ol{padding-left:1.2em}
 .aviso-urgente{background:var(--rojo-velo);box-shadow:0 0 0 1px #f5c2bf}
 .aviso-urgente h3{background:var(--rojo)}
 .aviso-mini{margin-top:1.4rem}
-.aviso-mini p{padding:1rem 1.2rem!important;color:var(--rojo-tinta)}
+.aviso-mini p{display:block;padding:1rem 1.2rem!important;color:var(--rojo-tinta)}
 .llevar{background:var(--navy);color:#fff;border-radius:var(--r);padding:1.5rem 1.7rem;margin:2.4rem 0;font-size:1.2rem;font-weight:550}
 .llevar .llevar-t{color:var(--celeste)}
 .llevar p{margin:0}
@@ -414,7 +414,7 @@ address{font-style:normal}
   .plano-base{margin-top:8px;display:flex;justify-content:center}
   .plano-rutas{display:none}
   .pie-grid{grid-template-columns:1fr 1fr}
-  .barra-movil{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(16,20,32,.22)}
+  .barra-movil{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(16,20,32,.22)}
   .barra-movil a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:.6rem 0 calc(.6rem + env(safe-area-inset-bottom));color:#fff;text-decoration:none;font:700 .95rem var(--senal)}
   .barra-movil .ico{width:24px;height:24px}
   .bm-wa{background:var(--verde-wa)}

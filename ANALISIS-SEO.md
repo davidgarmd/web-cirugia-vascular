@@ -9,7 +9,7 @@ Método: auditoría de SEO local, schema, SEO técnico y visibilidad en buscador
 
 | Aspecto | Situación |
 |---|---|
-| Tipo de negocio | Presencial (consulta física en Ciudad Real capital) con área de influencia provincial |
+| Tipo de negocio | Presencial: el doctor pasa consulta en la Clínica Cardiorreal (Calle Alonso Céspedes Guzmán, 10, 13005 Ciudad Real), con área de influencia provincial. No hay consulta privada propia por ahora |
 | Sector | Sanitario (YMYL: Google exige máxima experiencia, autoría y fiabilidad) |
 | Web previa | No existe: se parte de cero, sin historial ni enlaces |
 | Competencia observada | Cadenas de varices con clínica en la ciudad (p. ej. Varicentro Ciudad Real), directorios médicos (Doctoralia, Top Doctors) y hospitales o clínicas privadas con páginas genéricas de "cirugía vascular" |
@@ -50,7 +50,7 @@ Criterio: las páginas con **"Ciudad Real" en URL, título y H1** atacan búsque
 - Enlazado interno en estrella: portada (tótem «¿Qué notas?» y mapa vascular) → plano `/tratamientos/` → 9 páginas de patología, que se enlazan entre sí con anclas descriptivas y con el eco-doppler como página pivote. Todas a ≤ 2 clics de la portada.
 - Migas de pan visibles y en schema.
 - NAP (nombre, dirección y teléfono) visible en el pie de todas las páginas, en contacto y en la portada, idéntico al del schema.
-- Botón de llamada (`tel:`), WhatsApp y barra fija de contacto en móvil.
+- NAP = el de la Clínica Cardiorreal (nombre, dirección y teléfono de citas 926 22 10 08). Botón de llamada (`tel:`) y barra fija de contacto en móvil. WhatsApp, correo y formulario se activan solos al rellenarlos en `contenido.py`.
 - Lista de poblaciones atendidas en la portada, **sin crear páginas "puerta" por municipio** (penalizables desde la actualización de marzo de 2024).
 
 ### Contenido (E-E-A-T para salud)
@@ -60,7 +60,7 @@ Criterio: las páginas con **"Ciudad Real" en URL, título y H1** atacan búsque
 - Aviso educativo y criterios de urgencia explícitos (rojo reservado solo para urgencias).
 
 ### Datos estructurados (JSON-LD, validado)
-- `MedicalClinic` con dirección, coordenadas, horario (`openingHoursSpecification`), área atendida y servicios.
+- `MedicalClinic` = Clínica Cardiorreal (dirección, teléfono, área atendida y servicios); el `Person` la referencia con `worksFor`. Coordenadas y horario se publican cuando estén confirmados (vacíos no se emiten).
 - `Person` (el médico) con cargo, afiliación hospitalaria, `knowsAbout` y `sameAs` a redes: conecta autor, consulta y contenido como una sola entidad.
 - `MedicalWebPage` en cada patología con `about` → `MedicalCondition`, `reviewedBy`, `lastReviewed` y `audience: Patient`.
 - `BreadcrumbList`, `WebSite`, `ProfilePage`, `ContactPage`, `Blog` y `BlogPosting`.
@@ -95,8 +95,8 @@ La web está prácticamente al máximo de lo que puede aportar por sí sola. Má
 ## 5. Diez acciones priorizadas
 
 **Críticas (antes o el mismo día de publicar)**
-1. **Completar los datos de `contenido.py`**: teléfono, dirección, nº de colegiado, nº de registro sanitario del centro, horario, coordenadas exactas. Sin NAP real, no hay SEO local.
-2. **Crear y verificar Google Business Profile.** Categoría principal: *Cirujano vascular* (es el factor nº 1 del mapa; una categoría equivocada es el factor negativo nº 1). Secundarias: *Clínica de varices*, *Médico*, *Servicio de ecografía*. Nombre = tu nombre real, sin palabras clave añadidas (penalizable). Enlaza la ficha a la página `/contacto/` o `/tratamiento-varices-ciudad-real/` en lugar de a la portada, para no canibalizar el posicionamiento orgánico de la home.
+1. **Confirmar con la Clínica Cardiorreal** el teléfono de citas, la dirección, su nº de registro sanitario, los días de consulta de cirugía vascular y las coordenadas exactas, y que está de acuerdo en aparecer en la web. Completar también el nº de colegiado.
+2. **Crear y verificar Google Business Profile.** Al pasar consulta en una clínica ajena, lo correcto es una ficha de *profesional* ("Dr. David García") en la dirección de la Clínica Cardiorreal, con su teléfono de citas, coordinada con la clínica (Google permite fichas de profesionales dentro de un centro). Pide además a la clínica que te añada en su web con enlace a esta. Categoría principal: *Cirujano vascular* (es el factor nº 1 del mapa; una categoría equivocada es el factor negativo nº 1). Secundarias: *Clínica de varices*, *Médico*, *Servicio de ecografía*. Nombre = tu nombre real, sin palabras clave añadidas (penalizable). Enlaza la ficha a la página `/contacto/` o `/tratamiento-varices-ciudad-real/` en lugar de a la portada, para no canibalizar el posicionamiento orgánico de la home.
 3. **Foto profesional real** en `static/img/david-garcia-cirujano-vascular.jpg` (cuadrada, ≥ 640 px) y 10-15 fotos de la consulta, la sala de ecografía y la fachada en la ficha de Google.
 4. **Dar de alta el dominio en Google Search Console y Bing Webmaster Tools** y enviar el sitemap. Bing alimenta a ChatGPT y Copilot.
 

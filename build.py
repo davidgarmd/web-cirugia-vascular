@@ -98,7 +98,7 @@ def tel_visible():
 def botones(cls=""):
     return (f'<div class="acciones {cls}">'
             f'<a class="btn btn-navy" href="tel:{e(C["telefono_enlace"])}">{icono("tel")}<span>Llamar</span>{tel_visible()}</a>'
-            f'<a class="btn btn-wa" href="https://wa.me/{e(C["whatsapp"])}" rel="noopener">{icono("wa")}<span>WhatsApp</span></a>'
+            + (f'<a class="btn btn-wa" href="https://wa.me/{e(C["whatsapp"])}" rel="noopener">{icono("wa")}<span>WhatsApp</span></a>' if C.get("whatsapp") else "")
             + (f'<a class="btn btn-borde" href="{e(C["enlace_reserva"])}" rel="noopener">{icono("cal")}<span>Reservar online</span></a>' if C.get("enlace_reserva") else "")
             + "</div>")
 
@@ -133,7 +133,7 @@ def pie():
     <div>
       <h2 class="pie-t">Consulta</h2>
       <address>{e(C['centro'])}<br>{e(C['calle'])}<br>{e(C['cp'])} {e(C['ciudad'])}<br>
-      <a href="tel:{e(C['telefono_enlace'])}">{e(C['telefono'])}</a><br><a href="mailto:{e(C['email'])}">{e(C['email'])}</a></address>
+      <a href="tel:{e(C['telefono_enlace'])}">{e(C['telefono'])}</a>{f'<br><a href="mailto:{e(C["email"])}">{e(C["email"])}</a>' if C.get("email") else ""}</address>
       <p>{e(C['horario_texto'])}</p>
     </div>
     <div><h2 class="pie-t">Consultas</h2><ul>{serv}</ul></div>
@@ -146,7 +146,7 @@ def pie():
 </footer>
 <nav class="barra-movil" aria-label="Contacto rápido">
   <a href="tel:{e(C['telefono_enlace'])}">{icono("tel")}Llamar</a>
-  <a class="bm-wa" href="https://wa.me/{e(C['whatsapp'])}" rel="noopener">{icono("wa")}WhatsApp</a>
+  {f'<a class="bm-wa" href="https://wa.me/{e(C["whatsapp"])}" rel="noopener">{icono("wa")}WhatsApp</a>' if C.get("whatsapp") else ""}
   <a class="bm-cita" href="/contacto/">{icono("cal")}Pedir cita</a>
 </nav>
 <script src="/rutas.js" defer></script>"""
@@ -179,14 +179,14 @@ ID_WEB = D + "/#web"
 def schema_consulta():
     return {
         "@type": "MedicalClinic", "@id": ID_CONSULTA,
-        "name": f'{C["nombre"]} · Cirugía Vascular en Ciudad Real', "url": D + "/",
-        "image": D + "/img/og-cirujano-vascular-ciudad-real.png", "logo": D + "/favicon.svg",
+        "name": C["centro"], "url": C.get("centro_url") or D + "/",
+        "image": D + "/img/og-cirujano-vascular-ciudad-real.png",
         "telephone": "" if es_placeholder(C["telefono"]) else C["telefono_enlace"],
-        "email": C["email"], "priceRange": "€€",
+        "email": C["email"],
         "medicalSpecialty": ["https://schema.org/Cardiovascular", "https://schema.org/Surgical"],
         "address": {"@type": "PostalAddress", "streetAddress": C["calle"], "postalCode": C["cp"],
                     "addressLocality": C["ciudad"], "addressRegion": C["region"], "addressCountry": "ES"},
-        "geo": {"@type": "GeoCoordinates", "latitude": float(C["lat"]), "longitude": float(C["lng"])},
+        "geo": {"@type": "GeoCoordinates", "latitude": float(C["lat"]), "longitude": float(C["lng"])} if C["lat"] and C["lng"] else None,
         "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": h["dias"],
                                        "opens": h["abre"], "closes": h["cierra"]} for h in C["horario_schema"]],
         "areaServed": [{"@type": "City", "name": "Ciudad Real"}, {"@type": "AdministrativeArea", "name": "Provincia de Ciudad Real"}]
@@ -234,8 +234,7 @@ def documento(ruta, title, description, cuerpo, schemas, activo="", og_type="web
 <link rel="canonical" href="{url}">
 <meta name="geo.region" content="ES-CR">
 <meta name="geo.placename" content="Ciudad Real">
-<meta name="geo.position" content="{C['lat']};{C['lng']}">
-<meta property="og:type" content="{og_type}">
+{f'<meta name="geo.position" content="{C["lat"]};{C["lng"]}">' + chr(10) if C["lat"] and C["lng"] else ""}<meta property="og:type" content="{og_type}">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="{e(C['nombre'])} · Cirugía Vascular">
 <meta property="og:title" content="{e(title)}">
@@ -353,7 +352,7 @@ def pag_inicio():
       <p class="pp-col">Cirujano vascular y endovascular · n.º col. {e(C['colegiado'])}</p>
     </div>
     <div class="doctor-texto">
-      <p class="doctor-lead">El mismo cirujano vascular del {e(C['hospital'])}, también en consulta privada.</p>
+      <p class="doctor-lead">El mismo cirujano vascular del {e(C['hospital'])}, que pasa consulta en la {e(C['centro'])}.</p>
       <ul class="doctor-puntos">
         <li><strong>Especialista vía MIR en Angiología y Cirugía Vascular</strong>, con formación endovascular: técnicas mínimamente invasivas y cirugía compleja.</li>
         <li><strong>Centrado en la insuficiencia venosa crónica</strong> y la congestión venosa pélvica.</li>
@@ -368,7 +367,7 @@ def pag_inicio():
 <section class="provincia" aria-labelledby="prov-t">
   <div class="contenedor">
     <h2 id="prov-t">Pacientes de toda la provincia</h2>
-    <p class="prov-sub">La consulta está en {e(C['ciudad'])} capital. Llegan pacientes de:</p>
+    <p class="prov-sub">La consulta está en la {e(C['centro'])}, en {e(C['ciudad'])} capital. Llegan pacientes de:</p>
     <ol class="linea-pueblos">{pueblos}<li class="destino">{e(C['ciudad'])}</li></ol>
     <div class="nap">
       <p>{icono("pin")}<span><strong>{e(C['centro'])}</strong><br>{e(C['calle'])}, {e(C['cp'])} {e(C['ciudad'])}</span></p>
@@ -543,12 +542,12 @@ def pag_sobre_mi():
 
 def pag_contacto():
     m_html, m_schema = migas([("Pedir cita", "/contacto/")])
-    accion = C["formulario_action"] or f'mailto:{C["email"]}'
+    accion = C["formulario_action"] or (f'mailto:{C["email"]}' if C.get("email") else "")
     enctype = "" if C["formulario_action"] else ' enctype="text/plain"'
     motivos = "".join(f"<option>{e(s['menu'])}</option>" for s in SERVICIOS) + "<option>Otro motivo</option>"
     cuerpo = f"""<div class="entrada"><div class="contenedor">{m_html}
 <h1 class="h1-plano">Pedir cita con el cirujano vascular en Ciudad Real</h1>
-<p class="escena">Llama, escribe por WhatsApp o déjanos tus datos y te llamamos para darte hora. No necesitas volante.</p>
+<p class="escena">Llama a la {e(C['centro'])} y pide cita con el Dr. David García. No necesitas volante.</p>
 {botones()}</div></div>
 <section class="contacto"><div class="contenedor contacto-grid">
   <div class="nap nap-grande">
@@ -556,11 +555,13 @@ def pag_contacto():
     <p>{icono("pin")}<span><strong>{e(C['centro'])}</strong><br>{e(C['calle'])}<br>{e(C['cp'])} {e(C['ciudad'])} ({e(C['provincia'])})</span></p>
     <p>{icono("reloj")}<span>{e(C['horario_texto'])}</span></p>
     <p>{icono("tel")}<a href="tel:{e(C['telefono_enlace'])}">{e(C['telefono'])}</a></p>
-    <p>{icono("mail")}<a href="mailto:{e(C['email'])}">{e(C['email'])}</a></p>
+    {f'<p>{icono("mail")}<a href="mailto:{e(C["email"])}">{e(C["email"])}</a></p>' if C.get("email") else ""}
     <a class="enlace-flecha" href="{e(C['enlace_mapa'])}" rel="noopener">Abrir en Google Maps {icono("flecha", "ico ico-sm")}</a>
     <div class="aviso-panel aviso-urgente aviso-mini"><p><strong>Si es una urgencia, no esperes a la cita:</strong> llama al 112 o acude a urgencias.</p></div>
   </div>
-  <form class="formulario" action="{e(accion)}" method="post"{enctype}>
+  {{formulario}}
+</div></section>"""
+    formulario = f"""<form class="formulario" action="{e(accion)}" method="post"{enctype}>
     <h2>Te llamamos</h2>
     <label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required>
     <label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required>
@@ -569,12 +570,17 @@ def pag_contacto():
     <p class="nota-form">No incluyas informes ni datos clínicos: los vemos contigo en la consulta.</p>
     <label class="check"><input type="checkbox" name="privacidad" required> He leído y acepto la <a href="/privacidad/">política de privacidad</a>.</label>
     <button class="btn btn-navy" type="submit">Solicitar llamada</button>
-  </form>
-</div></section>"""
+  </form>""" if accion else f"""<div class="formulario">
+    <h2>Cómo pedir cita</h2>
+    <p>La cita con el Dr. David García se gestiona en la recepción de la {e(C['centro'])}. Llama, di que es para cirugía vascular y te dan día y hora.</p>
+    <p>Trae a la consulta los informes y pruebas que tengas (eco-doppler, análisis, informes de urgencias). Si vienes por un hallazgo en una prueba, ese informe es lo más importante.</p>
+    <a class="btn btn-navy" href="tel:{e(C['telefono_enlace'])}">{icono("tel")}<span>Llamar al {e(C['telefono'])}</span></a>
+  </div>"""
+    cuerpo = cuerpo.replace("{formulario}", formulario)
     schemas = [{"@type": "ContactPage", "url": D + "/contacto/", "name": "Pedir cita", "isPartOf": {"@id": ID_WEB},
                 "about": {"@id": ID_CONSULTA}, "breadcrumb": m_schema}, schema_consulta()]
     return documento("/contacto/", "Pedir cita con el cirujano vascular en Ciudad Real | Teléfono y dirección",
-                     "Pide cita con el cirujano vascular en Ciudad Real por teléfono, WhatsApp o formulario. Dirección, horario y cómo llegar. Sin volante.",
+                     f"Pide cita con el cirujano vascular en Ciudad Real: consulta en la {C['centro']}, {C['calle']}. Teléfono {C['telefono']}. Sin volante.",
                      cuerpo, schemas, activo="/contacto/")
 
 
@@ -614,16 +620,17 @@ def pag_legal(ruta, h1, html_cuerpo):
 
 
 AVISO_LEGAL = f"""<p class="nota-plantilla">Plantilla orientativa. Debe revisarla un profesional antes de publicar.</p>
-<h2>Titular</h2><p>En cumplimiento de la Ley 34/2002 (LSSI-CE): titular {e(C['nombre_completo'])}, NIF [NIF], domicilio profesional en {e(C['calle'])}, {e(C['cp'])} {e(C['ciudad'])}. Correo: {e(C['email'])}. Teléfono: {e(C['telefono'])}.</p>
+<h2>Titular</h2><p>En cumplimiento de la Ley 34/2002 (LSSI-CE): titular {e(C['nombre_completo'])}, NIF [NIF], domicilio profesional en {e(C['centro'])}, {e(C['calle'])}, {e(C['cp'])} {e(C['ciudad'])}. Correo: {e(C['email'] or '[correo de contacto]')}. Teléfono: {e(C['telefono'])}.</p>
 <h2>Datos profesionales</h2><p>Título: Licenciado o Graduado en Medicina, especialista en {e(C['especialidad'])}, expedido en España. Colegio profesional: Ilustre Colegio Oficial de Médicos de Ciudad Real, nº de colegiado {e(C['colegiado'])}. Normas profesionales: Código de Deontología Médica. Centro sanitario: {e(C['registro_sanitario'])}.</p>
 <h2>Contenido</h2><p>La información de esta web tiene carácter divulgativo y no sustituye la consulta médica. No se ofrecen diagnósticos ni tratamientos a distancia.</p>"""
 
 PRIVACIDAD = f"""<p class="nota-plantilla">Plantilla orientativa. Debe revisarla un profesional antes de publicar.</p>
-<h2>Responsable</h2><p>{e(C['nombre_completo'])}, {e(C['calle'])}, {e(C['cp'])} {e(C['ciudad'])}. Contacto: {e(C['email'])}.</p>
-<h2>Qué datos tratamos y para qué</h2><p>Los datos que envías por el formulario, teléfono, correo o WhatsApp (nombre, teléfono y motivo general) se usan solo para gestionar tu cita. Base jurídica: tu consentimiento y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b RGPD). La historia clínica se rige por la Ley 41/2002 de autonomía del paciente.</p>
+<h2>Responsable</h2><p>{e(C['nombre_completo'])}, {e(C['centro'])}, {e(C['calle'])}, {e(C['cp'])} {e(C['ciudad'])}. Contacto: {e(C['email'] or '[correo de contacto]')}.</p>
+<p>Esta web no recoge datos de pacientes: las citas se piden por teléfono en la {e(C['centro'])}, que es responsable de los datos que trata al gestionarlas y de la historia clínica.</p>
+<h2>Qué datos tratamos y para qué</h2><p>Si en el futuro la web incorpora formulario o mensajería, los datos que envíes (nombre, teléfono y motivo general) se usarán solo para gestionar tu cita. Base jurídica: tu consentimiento y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b RGPD). La historia clínica se rige por la Ley 41/2002 de autonomía del paciente.</p>
 <h2>Conservación</h2><p>Los datos de contacto se conservan el tiempo necesario para gestionar tu solicitud; la historia clínica, el plazo legal.</p>
 <h2>Destinatarios</h2><p>No se ceden datos a terceros salvo obligación legal. Proveedores: [alojamiento web], [servicio de formularios], [software de gestión de citas], con contrato de encargo de tratamiento.</p>
-<h2>Tus derechos</h2><p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {e(C['email'])}, y reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>"""
+<h2>Tus derechos</h2><p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {e(C['email'] or '[correo de contacto]')}, y reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>"""
 
 COOKIES = """<p>Esta web no usa cookies propias ni de terceros, ni herramientas de analítica que rastreen a los visitantes. Las fuentes tipográficas están alojadas en el propio servidor.</p>
 <p>Si en el futuro se incorpora analítica o contenido de terceros (mapas, vídeos), esta política se actualizará y se pedirá tu consentimiento antes de instalar cookies no necesarias.</p>"""
@@ -666,7 +673,10 @@ def llms():
               f"> Consulta de {C['especialidad']} en Ciudad Real (Castilla-La Mancha, España). Diagnóstico con eco-doppler y tratamiento de varices, congestión venosa pélvica, enfermedad arterial periférica, pie diabético, aneurisma de aorta, trombosis venosa, úlceras y estenosis carotídea.",
               "", "## Consultas"]
     lineas += [f"- [{s['h1']}]({D}/{s['slug']}/): {s['resumen']}" for s in SERVICIOS]
-    lineas += ["", "## Consulta", f"- [El doctor]({D}/sobre-mi/)", f"- [Pedir cita]({D}/contacto/)"]
+    lineas += ["", "## Consulta",
+               f"- Lugar: {C['centro']}, {C['calle']}, {C['cp']} {C['ciudad']}. Cita por teléfono: {C['telefono']}.",
+               f"- También cirujano vascular del {C['hospital']}.",
+               f"- [El doctor]({D}/sobre-mi/)", f"- [Pedir cita]({D}/contacto/)"]
     return "\n".join(lineas) + "\n"
 
 
