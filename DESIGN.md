@@ -22,19 +22,19 @@ colors:
   wall: "#FFFFFF"
 typography:
   display:
-    fontFamily: "Montserrat, Inter, system-ui, sans-serif"
+    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
     fontSize: "clamp(2.5rem, 5.25vw, 5.1rem)"
     fontWeight: 800
     lineHeight: 1.02
     letterSpacing: "-0.03em"
   headline:
-    fontFamily: "Montserrat, Inter, system-ui, sans-serif"
+    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
     fontSize: "clamp(1.7rem, 3.2vw, 2.5rem)"
     fontWeight: 800
     lineHeight: 1.08
     letterSpacing: "-0.015em"
   title:
-    fontFamily: "Montserrat, Inter, system-ui, sans-serif"
+    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
     fontSize: "1.2rem"
     fontWeight: 800
     lineHeight: 1.25
@@ -55,12 +55,12 @@ typography:
     fontWeight: 600
     lineHeight: 1.15
   body:
-    fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+    fontFamily: "Atkinson Hyperlegible Next, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.65
   lead:
-    fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+    fontFamily: "Atkinson Hyperlegible Next, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
     fontSize: "clamp(1.15rem, 1.75vw, 1.65rem)"
     fontWeight: 500
     lineHeight: 1.35
@@ -159,7 +159,8 @@ The direction contract predates the approved comp (comp D2, hybrid). Where they 
 
 **Key Characteristics:**
 - Navy sign panels on a pale corridor floor; light blue route lines with a moving white flow dash.
-- Three typefaces with strict jobs: Montserrat 800 headings, Barlow Semi Condensed sign lettering, Inter for reading.
+- Two typefaces with strict jobs: Atkinson Hyperlegible Next (headings at 780-800, reading at 400) and Barlow Semi Condensed for sign lettering and phone numbers.
+- Revision (Oct 2026): Montserrat + Inter read as the generic AI-site pairing, so both were replaced by Atkinson Hyperlegible Next, designed by the Braille Institute for low-vision readers. Radius dropped from 12px to 6px (a hospital sign, not a SaaS card). Diffuse shadows removed; cards use a hairline plus a 4px navy top rule. On phones the hanging sign becomes a flat full-bleed bar, the summary box is a left rule with a sign-lettering label, the three stops are numbered in Barlow without circles, and the bottom bar is one call action plus "Dónde".
 - Semantic colour is absolute: red is urgency, green is WhatsApp (and healthy-habit checks), nothing else.
 - One radius (12px) for every panel, button and plaque.
 - Tabler line icons plus three authored pictograms (varicose leg, uterus and ovaries, foot with wound) in the same 2px round stroke.
@@ -195,11 +196,11 @@ A two-colour signage palette (navy and light blue) on a cool off-white floor, wi
 
 ## Typography
 
-**Display Font:** Montserrat 800 (with Inter, system-ui)
+**Display Font:** Atkinson Hyperlegible Next 780-800 (with system-ui)
 **Sign Font:** Barlow Semi Condensed 600/700 (with Arial Narrow, system-ui)
-**Body Font:** Inter variable (with system-ui, -apple-system, Segoe UI, Roboto)
+**Body Font:** Atkinson Hyperlegible Next variable (with system-ui, -apple-system, Segoe UI, Roboto)
 
-**Character:** Montserrat at extra-bold is the voice of the headline; Barlow Semi Condensed is the lettering you would find on the corridor signs themselves, compact and upright; Inter does the patient reading at a large, calm size. All three are self-hosted.
+**Character:** Atkinson Hyperlegible Next carries both headline and reading: its letterforms are drawn to stay distinct for readers with low vision, which suits older patients and the wayfinding world. Barlow Semi Condensed is the lettering painted on the corridor signs, and also sets phone numbers (Atkinson slashes its zero). Both self-hosted.
 
 ### Hierarchy
 - **Display** (display): the home H1 "Cirujano vascular en Ciudad Real" only; tight, near-solid leading.
@@ -211,7 +212,7 @@ A two-colour signage palette (navy and light blue) on a cool off-white floor, wi
 - **Lead** (lead): the hero subline and the doctor lead, in navy.
 
 ### Named Rules
-**The Sign Lettering Rule.** If it would be painted on a hospital sign (a destination, an action, a room), set it in Barlow Semi Condensed 700. If it is a heading, Montserrat 800. If it is to be read, Inter. Never mix jobs.
+**The Sign Lettering Rule.** If it would be painted on a hospital sign (a destination, an action, a room), set it in Barlow Semi Condensed 700. If it is a heading or is to be read, Atkinson Hyperlegible Next. Never mix jobs.
 
 **The 18px Floor Rule.** Body text is 1.125rem (18px) minimum; secondary text may go to 0.95rem only for metadata (dates, collegiate number, legal).
 
@@ -250,7 +251,7 @@ One corner: 12px on every panel, button, plaque, room and summary box. Exception
 ### Buttons
 Sign-lettered, square-shouldered and large: they read like the action plates at a hospital desk.
 - **Shape:** gently rounded (12px), 52px minimum height, 2px transparent border reserved for the outline variant.
-- **Llamar (navy):** navy with white Barlow 700 at 1.25rem, phone icon leading; the number appears beside it in Inter 500 when known.
+- **Llamar (navy):** navy with white Barlow 700 at 1.25rem, phone icon leading; the number appears beside it in Barlow 600 when known.
 - **WhatsApp (green):** WhatsApp Green, white lettering, WhatsApp icon.
 - **Pedir cita (light blue):** light blue with navy lettering; used in the nav sign, the mobile bar and the closing band.
 - **Outline:** wall white, navy border and text (online booking, when a link exists).
@@ -271,13 +272,13 @@ Drawn at runtime from the rows' real positions: one line per totem row on the ho
 - **Room (floor plan):** navy with a 2.5px white border (light blue for venous rooms, red for urgencias) and sign lettering.
 
 ### Content Panels
-- **Summary box:** Route Veil ground, 12px, title in Montserrat 800 navy.
+- **Summary box:** no ground; 4px light-blue left rule, label in Barlow 700 uppercase, light-blue ink.
 - **Take-away:** navy 12px, light blue title, white text at 1.2rem.
 - **Warning panels:** paired; "Pide cita si…" has a navy header, "Esto es de urgencias" has a red header on the Urgency Veil ground.
 - **Healthy-habit list:** round WhatsApp Green tick with a white check.
 
 ### Inputs / Fields
-- **Style:** wall white, 1.5px #9AA3BD stroke, 52px tall, Inter at body size.
+- **Style:** wall white, 1.5px #9AA3BD stroke, 52px tall, Atkinson at body size.
 - **Focus:** stroke turns navy plus a 3px light blue outline at 1px offset.
 
 ## Do's and Don'ts
@@ -296,4 +297,4 @@ Drawn at runtime from the rows' real positions: one line per totem row on the ho
 - **Don't** build page structure from grids of white shadowed service cards; destinations are directory rows, plaques or rooms.
 - **Don't** use stock photos of doctors, surgery, wounds or clinics; illustration stays in the brand's flat editorial style.
 - **Don't** set long-form reading (articles, FAQ answers, lists of more than a few lines) on navy.
-- **Don't** set sign lettering in Inter or body text in Barlow.
+- **Don't** set sign lettering in Atkinson or body text in Barlow.

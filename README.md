@@ -53,4 +53,4 @@ Añade un diccionario a la lista `BLOG` de `contenido.py` (copia el existente) y
 ## Otros
 
 - `herramientas/og.html`: plantilla de la imagen para redes (1200×630). Se renderiza con Chromium/Playwright.
-- Tipografías autoalojadas (licencia SIL OFL en `static/fonts/`): Montserrat (titulares), Inter (texto) y Barlow Semi Condensed (rótulos). Iconos: Tabler Icons (MIT) en `iconos.json`.
+- Tipografías autoalojadas (licencia SIL OFL en `static/fonts/`): Atkinson Hyperlegible Next (titulares y texto; creada por el Braille Institute para lectores con baja visión) y Barlow Semi Condensed (rótulos y teléfonos). Iconos: Tabler Icons (MIT) en `iconos.json`.

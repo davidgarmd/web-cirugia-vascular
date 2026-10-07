@@ -43,7 +43,7 @@ The website of Dr. David García, specialist in Angiología y Cirugía Vascular 
 
 ## Brand Commitments
 
-- Personal brand @davidgarmd, patient line "Vascular para Pacientes": palette navy `#0A2463`, light blue `#56CCF2`, white; red `#EB5757` only for alarm/urgent signals; green `#27AE60` only for healthy habits/reassurance. Sans-serif (Inter/Montserrat), extra-bold titles, generous sizes for older readers.
+- Personal brand @davidgarmd, patient line "Vascular para Pacientes": palette navy `#0A2463`, light blue `#56CCF2`, white; red `#EB5757` only for alarm/urgent signals; green `#27AE60` only for healthy habits/reassurance. Sans-serif (Atkinson Hyperlegible Next; Barlow Semi Condensed for sign lettering), extra-bold titles, generous sizes for older readers.
 - Illustration style validated by David: warm flat editorial vector illustration, recognisable human scenes, vessels always drawn as open tubes with through-flow, no gore, no surgical photos, no real wounds. Fixed prompt in the vascularpacientes-visuales skill.
 - Voice: second person ("tú"), everyday analogies for every medical term, myths corrected kindly, one clear urgency criterion with explicit action, close on one concrete behaviour, educational disclaimer. The surgeon appears in third person on condition pages. No em-dashes.
 - Slogan: "Cirugía vascular, ciencia y preguntas incómodas: medicina bien contada".

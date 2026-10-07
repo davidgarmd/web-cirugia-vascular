@@ -1,9 +1,10 @@
 /* Dr. David García · Cirugía Vascular
    Mundo visual: señalética hospitalaria. Rojo solo para urgencias, verde solo para WhatsApp y hábitos. */
-@font-face{font-family:"Inter";src:url(/fonts/inter-var.woff2) format("woff2");font-weight:100 900;font-display:swap}
+/* Atkinson Hyperlegible Next: diseñada por el Braille Institute para lectores con baja visión. Texto y titulares. */
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url(/fonts/atkinson-next-var.woff2) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url(/fonts/atkinson-next-var-italic.woff2) format("woff2");font-weight:200 800;font-style:italic;font-display:swap}
 @font-face{font-family:"Barlow Semi Condensed";src:url(/fonts/barlow-sc-600.woff2) format("woff2");font-weight:600;font-display:swap}
 @font-face{font-family:"Barlow Semi Condensed";src:url(/fonts/barlow-sc-700.woff2) format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"Montserrat";src:url(/fonts/montserrat-800.woff2) format("woff2");font-weight:800;font-display:swap}
 
 :root{
   --suelo:#F4F6F5;        /* pavimento del pasillo */
@@ -18,25 +19,26 @@
   --rojo-tinta:#B3261E;
   --rojo-velo:#FDEDEC;
   --verde-wa:#187A43;     /* WhatsApp */
-  --tinta:#15204A;
-  --tinta-2:#46507A;
+  --tinta:#0F1838;
+  --tinta-2:#394263;
   --linea:#DADDE6;
-  --r:12px;               /* radio único de placas y botones */
-  --sombra:0 2px 4px rgba(16,20,32,.08),0 12px 28px -12px rgba(16,20,32,.3);
+  --r:6px;                /* radio único: el de un rótulo de hospital */
+  --sombra:0 1px 0 rgba(6,26,74,.5);
   --ease-out:cubic-bezier(.23,1,.32,1);
-  --rotulo:"Montserrat","Inter",system-ui,sans-serif;
+  --rotulo:"Atkinson Hyperlegible Next",system-ui,sans-serif;
   --senal:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif; /* rótulos de señalética */
-  --texto:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --texto:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:24px}
-body{margin:0;background:var(--suelo);color:var(--tinta);font:400 1.125rem/1.65 var(--texto);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--suelo);color:var(--tinta);font:400 1.125rem/1.55 var(--texto);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%;height:auto}
-a{color:var(--navy);text-decoration-color:var(--celeste);text-decoration-thickness:2px;text-underline-offset:.2em}
+a{color:var(--navy);text-decoration-color:rgba(10,36,99,.4);text-decoration-thickness:1px;text-underline-offset:.18em}
+@media (hover:hover){a:not([class]):hover{text-decoration-color:currentColor}}
 @media (hover:hover){a:not([class]):hover{color:var(--navy-hover)}}
 ::selection{background:var(--celeste);color:var(--navy)}
 :focus-visible{outline:3px solid var(--celeste);outline-offset:3px;border-radius:6px}
-h1,h2,h3{font-family:var(--rotulo);font-weight:800;color:var(--navy);line-height:1.08;letter-spacing:-.015em;margin:0 0 .55em;text-wrap:balance}
+h1,h2,h3{font-family:var(--rotulo);font-weight:780;color:var(--navy);line-height:1.08;letter-spacing:-.022em;margin:0 0 .55em;text-wrap:balance}
 h2{font-size:clamp(1.7rem,3.2vw,2.5rem)}
 h3{font-size:1.2rem;line-height:1.25}
 p{margin:0 0 1em}
@@ -76,7 +78,7 @@ ul,ol{padding-left:1.2em}
 .cartel-wrap::before{left:7.5%}
 .cartel-wrap::after{right:7.5%}
 .cartel{display:flex;align-items:center;gap:24px;min-height:94px;padding:0 20px 0 34px;background:var(--navy);border-radius:var(--r);
-  box-shadow:0 14px 24px -14px rgba(16,20,32,.45)}
+  box-shadow:0 2px 0 var(--navy-hondo)}
 .marca{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font:700 clamp(1.2rem,1.9vw,1.8rem)/1.1 var(--senal);margin-right:auto;white-space:nowrap}
 .marca:hover{color:#fff}
 .logo-marca{width:62px;height:54px;flex:none}
@@ -92,7 +94,7 @@ ul,ol{padding-left:1.2em}
 /* ---------- Portada: el pasillo ---------- */
 .hero{position:relative;overflow:hidden}
 .hero-grid{position:relative}
-.hero h1{font-size:clamp(2.5rem,5.25vw,5.1rem);font-weight:800;letter-spacing:-.03em;line-height:1.02;margin:0}
+.hero h1{font-size:clamp(2.5rem,5.25vw,5.1rem);font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:0}
 .hero-sub{font:500 clamp(1.15rem,1.75vw,1.65rem)/1.35 var(--texto);color:var(--navy);margin:0}
 .hero .btn{font-size:clamp(1.3rem,2.3vw,2.2rem);min-height:clamp(54px,4.1vw,64px);padding:0 .9em;gap:.4em}
 .hero .btn .ico{width:1.3em;height:1.3em}
@@ -106,7 +108,7 @@ ul,ol{padding-left:1.2em}
 /* Tótem ¿Qué notas? */
 .totem{position:relative;background:var(--navy);border-radius:var(--r) var(--r) 4px 4px;color:#fff;
   padding:clamp(18px,1.6vw,26px) clamp(10px,.9vw,16px) 0;box-shadow:var(--sombra);display:flex;flex-direction:column}
-.totem h2{color:#fff;font-size:clamp(1.8rem,3vw,2.9rem);font-weight:800;margin:0 0 .3em;padding:0 .35em .35em;border-bottom:2px solid rgba(255,255,255,.85)}
+.totem h2{color:#fff;font-size:clamp(1.8rem,3vw,2.9rem);font-weight:780;margin:0 0 .3em;padding:0 .35em .35em;border-bottom:2px solid rgba(255,255,255,.85)}
 .totem-filas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;flex:1}
 .totem-filas li{flex:1;display:flex;border-bottom:1px solid rgba(255,255,255,.35)}
 .totem-filas li:last-child{border-bottom:0}
@@ -167,7 +169,7 @@ ul,ol{padding-left:1.2em}
 /* ---------- Mapa vascular ---------- */
 .mapa{padding:clamp(64px,8vw,120px) 0 clamp(40px,5vw,72px);background:var(--pared);border-top:1px solid var(--linea)}
 .mapa-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,80px);align-items:center}
-.mapa-texto p{font-size:1.2rem;color:var(--tinta-2);max-width:34ch}
+.mapa-texto p{font-size:1.2rem;line-height:1.5;color:var(--tinta-2);max-width:34ch}
 .leyenda{list-style:none;padding:0;margin:1.6rem 0 0;display:flex;gap:28px;font-weight:600}
 .leyenda li{display:flex;align-items:center;gap:10px}
 .leyenda li::before{content:"";width:40px;height:5px;border-radius:3px;background:currentColor}
@@ -187,10 +189,8 @@ ul,ol{padding-left:1.2em}
 /* ---------- Tres paradas ---------- */
 .consulta{padding:clamp(64px,8vw,110px) 0}
 .paradas{list-style:none;padding:0;margin:2.4rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);position:relative}
-.paradas::before{content:"";position:absolute;left:28px;right:28px;top:26px;height:10px;border-radius:6px;background:var(--celeste)}
-.paradas li{position:relative}
-.parada-n{position:relative;display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:var(--navy);color:#fff;
-  font:800 1.5rem var(--rotulo);border:6px solid var(--suelo);margin-bottom:18px}
+.paradas li{position:relative;border-top:3px solid var(--navy);padding-top:14px}
+.parada-n{display:block;font:700 clamp(2.6rem,4vw,3.4rem)/1 var(--senal);color:var(--celeste-tinta);margin-bottom:10px;font-variant-numeric:tabular-nums}
 .paradas p{color:var(--tinta-2);margin:0;max-width:32ch}
 
 /* ---------- El doctor: placa de puerta ---------- */
@@ -257,20 +257,20 @@ ul,ol{padding-left:1.2em}
 .totem-lista{max-width:760px;padding-bottom:6px}
 .totem-lista h2{font-size:clamp(1.5rem,2.4vw,2rem)}
 .totem-lista .fila-t{font-size:1.4rem}
-.puerta{display:inline-flex;align-items:center;gap:clamp(14px,2vw,24px);background:var(--navy);border-radius:var(--r);padding:clamp(18px,2.4vw,30px) clamp(20px,3vw,40px);box-shadow:var(--sombra);margin-bottom:1.6rem;max-width:100%}
-.puerta h1{color:#fff;margin:0;font-size:clamp(1.8rem,3.6vw,3rem)}
-.puerta-ico{display:grid;place-items:center;color:var(--celeste)}
-.puerta-ico .ico{width:clamp(40px,4vw,60px);height:clamp(40px,4vw,60px);stroke-width:1.6}
+.puerta{display:flex;align-items:center;gap:clamp(16px,2vw,24px);margin-bottom:1.4rem;max-width:100%}
+.puerta h1{margin:0;font-size:clamp(2rem,4vw,3.2rem);max-width:20ch}
+.puerta-ico{display:grid;place-items:center;flex:none;width:clamp(64px,6vw,84px);aspect-ratio:1;border-radius:var(--r);background:var(--navy);color:#fff}
+.puerta-ico .ico{width:62%;height:62%;stroke-width:1.5}
 .h1-plano{font-size:clamp(2rem,4vw,3.3rem);max-width:22ch}
-.escena{font-size:clamp(1.15rem,1.6vw,1.35rem);color:var(--tinta-2);max-width:60ch;margin:0}
+.escena{font-size:clamp(1.15rem,1.6vw,1.3rem);line-height:1.5;color:var(--tinta);max-width:60ch;margin:0}
 .meta-post{color:var(--tinta-2)}
 .pag-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:clamp(32px,5vw,72px);padding:clamp(24px,4vw,48px) 0 clamp(64px,8vw,96px);align-items:start}
 .articulo{max-width:46rem}
 .articulo section{margin-bottom:2.8rem}
 .articulo li{margin-bottom:.5em}
 .articulo h2{font-size:clamp(1.5rem,2.4vw,2rem)}
-.en-pocas{background:var(--celeste-velo);border-radius:var(--r);padding:1.4rem 1.6rem;margin-bottom:2.8rem}
-.en-pocas-t,.llevar-t,.caja-t{font:800 1.05rem/1.2 var(--rotulo);color:var(--navy);margin:0 0 .5rem}
+.en-pocas{border-left:4px solid var(--celeste);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.8rem;font-size:1.2rem}
+.en-pocas-t,.llevar-t,.caja-t{font:700 1rem/1.2 var(--senal);text-transform:uppercase;letter-spacing:.06em;color:var(--celeste-tinta);margin:0 0 .5rem}
 .en-pocas p{margin:0}
 .lista-check{list-style:none;padding:0}
 .lista-check li{position:relative;padding-left:2rem}
@@ -293,7 +293,7 @@ ul,ol{padding-left:1.2em}
 .llevar p{margin:0}
 .revisado{font-size:.95rem;color:var(--tinta-2);border-top:1px solid var(--linea);padding-top:1.2rem}
 .lateral{position:sticky;top:24px;display:grid;gap:20px}
-.caja-cita{background:var(--pared);border-radius:var(--r);padding:1.4rem;box-shadow:var(--sombra)}
+.caja-cita{background:var(--pared);border-radius:var(--r);padding:1.4rem;border:1px solid var(--linea);border-top:4px solid var(--navy)}
 .acciones-col{flex-direction:column;margin:1rem 0}
 .acciones-col .btn{width:100%}
 .caja-h{display:flex;gap:.5em;align-items:center;font-size:1rem;color:var(--tinta-2);margin:0}
@@ -361,7 +361,7 @@ ul,ol{padding-left:1.2em}
 /* ---------- Contacto ---------- */
 .contacto{padding:0 0 clamp(64px,8vw,110px)}
 .contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
-.nap-grande{background:var(--pared);border-radius:var(--r);padding:1.6rem;box-shadow:0 0 0 1px var(--linea)}
+.nap-grande{background:var(--pared);border-radius:var(--r);padding:1.6rem;border:1px solid var(--linea);border-top:4px solid var(--navy)}
 .formulario{display:grid;gap:.45rem}
 .formulario label{font-weight:600}
 .formulario input,.formulario select{font:inherit;min-height:52px;padding:.7rem 1rem;border:1.5px solid #9aa3bd;border-radius:10px;background:var(--pared);color:var(--tinta);margin-bottom:.7rem}
@@ -414,11 +414,13 @@ address{font-style:normal}
   .plano-base{margin-top:8px;display:flex;justify-content:center}
   .plano-rutas{display:none}
   .pie-grid{grid-template-columns:1fr 1fr}
-  .barra-movil{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(16,20,32,.22)}
-  .barra-movil a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:.6rem 0 calc(.6rem + env(safe-area-inset-bottom));color:#fff;text-decoration:none;font:700 .95rem var(--senal)}
-  .barra-movil .ico{width:24px;height:24px}
+  .barra-movil{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);border-top:3px solid var(--celeste);padding-bottom:env(safe-area-inset-bottom)}
+  .barra-movil a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 18px;color:#fff;text-decoration:none;font:700 1.15rem var(--senal)}
+  .barra-movil .ico{width:22px;height:22px;flex:none}
+  .barra-movil .bm-tel{flex:1}
+  .barra-movil b{font:500 1.05rem var(--texto);letter-spacing:.01em;margin-left:.3em;color:#D6E6FA}
   .bm-wa{background:var(--verde-wa)}
-  .bm-cita{background:var(--celeste);color:var(--navy)!important}
+  .bm-donde{border-left:1px solid rgba(255,255,255,.2)}
 }
 @media (max-width:720px){
   .marca{font-size:1rem;gap:10px}
@@ -428,7 +430,7 @@ address{font-style:normal}
   .hero-sub{margin-top:14px}
   .acciones-hero{margin-top:20px}
   .acciones .btn{flex:1 1 0;min-width:0;padding-inline:.6em}
-  .hero .btn{font-size:1.25rem}
+  .hero .btn{font-size:1.2rem}
   .hero-mujer{display:none}
   .hero-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:none;padding-inline:16px}
   .hero-copy,.hero .totem,.suelo{grid-column:auto;grid-row:auto}
@@ -438,8 +440,15 @@ address{font-style:normal}
   .acciones-hero{margin-top:14px}
   .totem h2{font-size:1.6rem}
   .fila{padding:.26em .2em}
-  .cartel-wrap{padding-top:14px}
-  .cartel-wrap::before,.cartel-wrap::after{height:18px}
+  /* En móvil el cartel deja de colgar: barra plana a sangre */
+  .cartel-wrap{padding:0}
+  .cartel-wrap::before,.cartel-wrap::after{display:none}
+  .cartel{border-radius:0;min-height:60px;box-shadow:none;padding:0 6px 0 16px}
+  .nav{left:0;right:0;top:100%;border-radius:0}
+  .puerta{flex-direction:column;align-items:flex-start;gap:14px}
+  .puerta-ico{width:56px}
+  .hero .btn{min-height:54px}
+  .en-pocas{font-size:1.1rem}
   .hero-sub{font-size:1.1rem}
   .fila-d{font-size:1rem}
   .fila-ico{width:36px;height:36px}
@@ -448,10 +457,10 @@ address{font-style:normal}
   .mapa-notas{width:100%;display:grid;gap:10px}
   .nota{position:static;transform:none}
   .nota::before{width:28px;margin:0 12px 0 0}
-  .paradas{grid-template-columns:1fr;gap:26px}
-  .paradas::before{left:26px;right:auto;top:28px;bottom:28px;width:10px;height:auto}
-  .paradas li{display:grid;grid-template-columns:62px 1fr;column-gap:18px}
-  .parada-n{grid-row:1/3;margin:0}
+  .paradas{grid-template-columns:1fr;gap:0}
+  .paradas li{display:grid;grid-template-columns:3.2rem 1fr;column-gap:12px;border-top:1px solid var(--linea);padding:18px 0}
+  .paradas li:first-child{border-top:3px solid var(--navy)}
+  .parada-n{grid-row:1/3;margin:0;font-size:2.4rem}
   .avisos,.mito,.placas{grid-template-columns:1fr}
   .mito{gap:8px}
   .plano{grid-template-columns:1fr;padding:22px 16px 20px}
@@ -469,3 +478,6 @@ address{font-style:normal}
   .barra-movil{display:none}
   .hero-sub{margin-top:14px}
 }
+/* Teléfonos con la letra de los rótulos (Atkinson tacha el cero) */
+a[href^="tel:"],.btn-extra,.barra-movil b{font-family:var(--senal);font-weight:600;letter-spacing:.01em}
+.articulo .en-pocas-t{font-size:1rem;margin-bottom:.5rem}

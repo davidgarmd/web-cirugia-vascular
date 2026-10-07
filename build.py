@@ -145,9 +145,9 @@ def pie():
   </div>
 </footer>
 <nav class="barra-movil" aria-label="Contacto rápido">
-  <a href="tel:{e(C['telefono_enlace'])}">{icono("tel")}Llamar</a>
-  {f'<a class="bm-wa" href="https://wa.me/{e(C["whatsapp"])}" rel="noopener">{icono("wa")}WhatsApp</a>' if C.get("whatsapp") else ""}
-  <a class="bm-cita" href="/contacto/">{icono("cal")}Pedir cita</a>
+  <a class="bm-tel" href="tel:{e(C['telefono_enlace'])}">{icono("tel")}<span>Pedir cita <b>{e(C['telefono'])}</b></span></a>
+  {f'<a class="bm-wa" href="https://wa.me/{e(C["whatsapp"])}" rel="noopener">{icono("wa")}<span>WhatsApp</span></a>' if C.get("whatsapp") else ""}
+  <a class="bm-donde" href="/contacto/">{icono("pin")}<span>Dónde</span></a>
 </nav>
 <script src="/rutas.js" defer></script>"""
 
@@ -246,7 +246,7 @@ def documento(ruta, title, description, cuerpo, schemas, activo="", og_type="web
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A2463">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/atkinson-next-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/barlow-sc-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/estilos.css">
 <script type="application/ld+json">{json.dumps(grafo, ensure_ascii=False)}</script>
